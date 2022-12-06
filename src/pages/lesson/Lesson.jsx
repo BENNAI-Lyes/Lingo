@@ -465,7 +465,7 @@ const Lesson = () => {
                       className="close"
                       onClick={() => {
                         setOpenModal(false);
-                        window.location.reload();
+                        // window.location.reload();
                       }}
                     >
                       X
