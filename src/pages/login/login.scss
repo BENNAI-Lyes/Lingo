@@ -47,19 +47,32 @@
       }
 
       button {
-        background-color: var(--primary-color);
+        background-color: var(--primary-color-light);
         color: var(--wight-color);
         border: none;
-        font-size: 17px;
+        font-size: 16px;
         font-weight: 500;
         border-radius: 30px;
         -webkit-border-radius: 30px;
         -moz-border-radius: 30px;
         -ms-border-radius: 30px;
         -o-border-radius: 30px;
-        width: 200px;
-        padding: 10px 0;
+        width: 220px;
+        padding: 15px 0;
         cursor: pointer;
+        transition: all 0.4s ease-in-out;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+
+        text-transform: capitalize;
+        letter-spacing: 0.5px;
+        margin-top: 15px;
+
+        &:hover {
+          background-color: var(--primary-color-dark);
+        }
       }
     }
 
