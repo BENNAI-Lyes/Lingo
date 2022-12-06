@@ -486,6 +486,12 @@
             flex-direction: column;
             gap: 15px;
 
+            .info {
+              display: flex;
+              align-items: center;
+              gap: 25px;
+            }
+
             input {
               flex: 1;
               padding: 15px 20px;
