@@ -24,6 +24,10 @@ const Lesson = () => {
   const [reOrderingAns, setReOrderingAns] = useState('');
   const [fillingGapsAns, setFillingGapsAns] = useState('');
 
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [text, setText] = useState('');
+
   const id = parseInt(useLocation().pathname.split('/')[2]);
   const category = useLocation().pathname.split('/')[1];
 
@@ -49,11 +53,6 @@ const Lesson = () => {
   };
 
   const handelScore = (clickedAnswer, correctAnswer, questionType) => {
-    console.log('clickedAnswer==========>', clickedAnswer);
-    console.log('correctAnswer==========>', correctAnswer);
-    console.log('***********************');
-    console.log('matchingAns============>', matchingAns);
-
     const activityPoints = 20 / currentLesson.questions.length;
 
     switch (questionType) {
@@ -121,6 +120,9 @@ const Lesson = () => {
       )
       .then(
         (result) => {
+          setName('');
+          setEmail('');
+          setText('');
           console.log(result.text);
         },
         (error) => {
@@ -427,11 +429,15 @@ const Lesson = () => {
                       type="text"
                       name="from_name"
                       placeholder="Your Name ..."
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
                     />
                     <input
                       type="email"
                       name="from_email"
                       placeholder="Your Email ..."
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                     />
                   </div>
                   <textarea
@@ -439,6 +445,8 @@ const Lesson = () => {
                     cols="30"
                     rows="10"
                     placeholder="send text to email teacher here ..."
+                    value={text}
+                    onChange={(e) => setText(e.target.value)}
                   ></textarea>
                   <button>send</button>
                 </form>
