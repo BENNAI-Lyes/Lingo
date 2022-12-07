@@ -1,4 +1,4 @@
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import './lesson.scss';
 import { grammar } from '../../assets/data/grammar';
 import { listening } from '../../assets/data/listening';
@@ -17,6 +17,8 @@ import audioReading_1 from '../../assets/audio/reading-1.mp3';
 import { useRef, useState } from 'react';
 
 const Lesson = () => {
+  const navigate = useNavigate();
+
   const [openModal, setOpenModal] = useState(false);
   const [score, setScore] = useState(0);
 
@@ -465,7 +467,11 @@ const Lesson = () => {
                       className="close"
                       onClick={() => {
                         setOpenModal(false);
-                        // window.location.reload();
+                        setScore(0);
+                        setFillingGapsAns('');
+                        setMatchingAns('');
+                        setReOrderingAns('');
+                        navigate(`/${currentLesson.cat}/${id}`);
                       }}
                     >
                       X
