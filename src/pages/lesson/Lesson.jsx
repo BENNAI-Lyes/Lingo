@@ -9,11 +9,6 @@ import { writing } from '../../assets/data/writing';
 
 import emailjs from '@emailjs/browser';
 
-// import all videos
-import videoReading_1 from '../../assets/video/reading-1.mp4';
-
-// import all audios
-import audioReading_1 from '../../assets/audio/reading-1.mp3';
 import { useRef, useState } from 'react';
 
 const Lesson = () => {
@@ -54,19 +49,24 @@ const Lesson = () => {
     console.log('anserw submited');
   };
 
-  const handelScore = (clickedAnswer, correctAnswer, questionType) => {
+  const handelScore = (
+    clickedAnswer,
+    correctAnswer,
+    questionType,
+    numberOfQuestions
+  ) => {
     const activityPoints = 20 / currentLesson.questions.length;
 
     switch (questionType) {
       case 'trueFalse':
         if (clickedAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
-          setScore((prev) => prev + activityPoints);
+          setScore((prev) => prev + activityPoints / numberOfQuestions);
         }
         break;
 
       case 'multipleChoice':
         if (clickedAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
-          setScore((prev) => prev + activityPoints);
+          setScore((prev) => prev + activityPoints / numberOfQuestions);
         }
         break;
 
@@ -153,14 +153,17 @@ const Lesson = () => {
           {currentLesson.video && (
             <div className="video">
               <h4>Video:</h4>
-              <video src={videoReading_1} controls></video>
+              <video
+                src="https://drive.google.com/file/d/1jJ9hR4eEQdyLRfQqZBXGsY3DM1Y0s1ev/view"
+                controls
+              ></video>
             </div>
           )}
 
           {currentLesson.audio && (
             <div className="audio">
               <h4>Audio:</h4>
-              <audio src={audioReading_1} controls></audio>
+              <audio src={currentLesson.audio} controls></audio>
             </div>
           )}
 
@@ -210,20 +213,29 @@ const Lesson = () => {
                             : 'Five'}
                           :
                         </h3>
-                        <div className="question">{ques.question}</div>
-                        <div className="answers">
-                          {ques.answers.map((a, i) => (
-                            <div
-                              key={i}
-                              className="answer"
-                              onClick={() =>
-                                handelScore(a, ques.correctAnswer, 'trueFalse')
-                              }
-                            >
-                              {a}
+                        {ques.list.map((q, i) => (
+                          <div className="trueFalseItem" key={i}>
+                            <div className="question">{q.question}</div>
+                            <div className="answers">
+                              {q.answers.map((a, i) => (
+                                <div
+                                  key={i}
+                                  className="answer"
+                                  onClick={() =>
+                                    handelScore(
+                                      a,
+                                      q.correctAnswer,
+                                      'trueFalse',
+                                      ques.list.length
+                                    )
+                                  }
+                                >
+                                  {a}
+                                </div>
+                              ))}
                             </div>
-                          ))}
-                        </div>
+                          </div>
+                        ))}
                       </div>
                     ) : ques.type === 'multipleChoice' ? (
                       <div className="questionsItem multipleChoice">
@@ -240,24 +252,29 @@ const Lesson = () => {
                             : 'Five'}
                           :
                         </h3>
-                        <div className="question">{ques.question}</div>
-                        <div className="answers">
-                          {ques.answers.map((a, i) => (
-                            <div
-                              key={i}
-                              className="answer"
-                              onClick={() =>
-                                handelScore(
-                                  a,
-                                  ques.correctAnswer,
-                                  'multipleChoice'
-                                )
-                              }
-                            >
-                              {a}
+                        {ques.list.map((q, i) => (
+                          <div className="multipleChoiceItem" key={i}>
+                            <div className="question">{q.question}</div>
+                            <div className="answers">
+                              {q.answers.map((a, i) => (
+                                <div
+                                  key={i}
+                                  className="answer"
+                                  onClick={() =>
+                                    handelScore(
+                                      a,
+                                      q.correctAnswer,
+                                      'multipleChoice',
+                                      ques.list.length
+                                    )
+                                  }
+                                >
+                                  {a}
+                                </div>
+                              ))}
                             </div>
-                          ))}
-                        </div>
+                          </div>
+                        ))}
                       </div>
                     ) : ques.type === 'matching' ? (
                       <div className="questionsItem matching">

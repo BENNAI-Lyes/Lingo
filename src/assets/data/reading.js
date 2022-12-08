@@ -4,8 +4,8 @@ export const reading = [
     title:
       'sequence 01: reading fdddfffff fffffffffm dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dflorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffm dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffm dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff df',
     cat: 'reading',
-    audio: 'r1.mp3',
-    video: 'r1.mp4',
+    audio: 'audioReading_1',
+    video: 'videoReading_1',
     test: 'r-t-1',
     hint: 'lorem dfgdfg lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg rtgrgd dfgfgdfg fdddfffff ffffffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdf ff lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence',
     text: [
@@ -18,29 +18,111 @@ export const reading = [
       // true false
       {
         type: 'trueFalse',
-        question:
-          'have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem ipsum dolor sit amet, consectetur?',
-        answers: ['True', 'False'],
-        correctAnswer: 'True',
+        list: [
+          {
+            question:
+              'have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem ipsum dolor sit amet, consectetur?',
+            answers: ['True', 'False'],
+            correctAnswer: 'False',
+          },
+          {
+            question:
+              'have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem ipsum dolor sit amet, consectetur?',
+            answers: ['True', 'False'],
+            correctAnswer: 'False',
+          },
+          {
+            question:
+              'have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem ipsum dolor sit amet, consectetur?',
+            answers: ['True', 'False'],
+            correctAnswer: 'False',
+          },
+          {
+            question:
+              'have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem ipsum dolor sit amet, consectetur?',
+            answers: ['True', 'False'],
+            correctAnswer: 'False',
+          },
+          {
+            question:
+              'have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem ipsum dolor sit amet, consectetur?',
+            answers: ['True', 'False'],
+            correctAnswer: 'False',
+          },
+        ],
       },
 
       //multiple choice
       {
         type: 'multipleChoice',
-        question: 'Choose the right choice ?',
-        answers: [
-          '1- have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem',
-          '2- have copmleat Lorem ipsum dolor sit amet,have ',
-          '3- have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem',
-          '4- have copmleat Lorem ipsum dolor sit amet,have copmleat Loremhave copmleat Lorem ipsum dolor sit amet,have copmleat Lorem',
-          '5- have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem',
-          '6- have copmleat Lorem ipsum dolor sit amet',
-          '7- have copmleat Lorem ipsum dolor sit amet sdfsdf fdgdg fg',
-          '8- Lorem ipsum dolor sit amet',
-          '9- have copmleat Lorem  dolor sit amet',
-          '10- have copmleat Lorem ipsum dolor sit amet',
+        list: [
+          {
+            question: 'Choose the right choice ?',
+            answers: [
+              '1- have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem',
+              '2- have copmleat Lorem ipsum dolor sit amet,have ',
+              '3- have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem',
+              '4- have copmleat Lorem ipsum dolor sit amet,have copmleat Loremhave copmleat Lorem ipsum dolor sit amet,have copmleat Lorem',
+              '5- have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem',
+              '6- have copmleat Lorem ipsum dolor sit amet',
+              '7- have copmleat Lorem ipsum dolor sit amet sdfsdf fdgdg fg',
+              '8- Lorem ipsum dolor sit amet',
+              '9- have copmleat Lorem  dolor sit amet',
+              '10- have copmleat Lorem ipsum dolor sit amet',
+              '11- have copmleat Lorem ipsum dolor sit amet',
+              '12- have copmleat Lorem ipsum dolor sit amet',
+            ],
+            correctAnswer: '12- have copmleat Lorem ipsum dolor sit amet',
+          },
+          {
+            question: 'Choose the right choice ?',
+            answers: [
+              '1- have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem',
+              '2- have copmleat Lorem ipsum dolor sit amet,have ',
+              '3- have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem',
+              '4- have copmleat Lorem ipsum dolor sit amet,have copmleat Loremhave copmleat Lorem ipsum dolor sit amet,have copmleat Lorem',
+              '5- have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem',
+              '6- have copmleat Lorem ipsum dolor sit amet',
+            ],
+            correctAnswer: '6- have copmleat Lorem ipsum dolor sit amet',
+          },
+          {
+            question: 'Choose the right choice ?',
+            answers: [
+              '1- have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem',
+              '2- have copmleat Lorem ipsum dolor sit amet,have ',
+              '3- have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem',
+              '4- have copmleat Lorem ipsum dolor sit amet,have copmleat Loremhave copmleat Lorem ipsum dolor sit amet,have copmleat Lorem',
+              '5- have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem',
+              '6- have copmleat Lorem ipsum dolor sit amet',
+            ],
+            correctAnswer: '6- have copmleat Lorem ipsum dolor sit amet',
+          },
+          {
+            question: 'Choose the right choice ?',
+            answers: [
+              '1- have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem',
+              '2- have copmleat Lorem ipsum dolor sit amet,have ',
+              '3- have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem',
+              '4- have copmleat Lorem ipsum dolor sit amet,have copmleat Loremhave copmleat Lorem ipsum dolor sit amet,have copmleat Lorem',
+              '5- have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem',
+              '6- have copmleat Lorem ipsum dolor sit amet',
+            ],
+            correctAnswer: '6- have copmleat Lorem ipsum dolor sit amet',
+          },
+          {
+            question: 'Choose the right choice ?',
+            answers: [
+              '1- have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem',
+              '2- have copmleat Lorem ipsum dolor sit amet,have ',
+              '3- have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem',
+              '4- have copmleat Lorem ipsum dolor sit amet,have copmleat Loremhave copmleat Lorem ipsum dolor sit amet,have copmleat Lorem',
+              '5- have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem',
+              '6- have copmleat Lorem ipsum dolor sit amet',
+            ],
+            correctAnswer: '6- have copmleat Lorem ipsum dolor sit amet',
+          },
         ],
-        correctAnswer: '10- have copmleat Lorem ipsum dolor sit amet',
       },
 
       //matching

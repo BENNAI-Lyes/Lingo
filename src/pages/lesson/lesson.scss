@@ -189,6 +189,11 @@
               width: max-content;
             }
 
+            .multipleChoiceItem,
+            .trueFalseItem {
+              margin-top: 20px;
+            }
+
             .question {
               text-align: center;
               padding: 10px 20px;
