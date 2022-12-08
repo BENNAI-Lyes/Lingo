@@ -4,8 +4,9 @@ export const reading = [
     title:
       'sequence 01: reading fdddfffff fffffffffm dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dflorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffm dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffm dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff df',
     cat: 'reading',
-    audio: 'audioReading_1',
-    video: 'videoReading_1',
+    audioUrl: 'audioReading_1',
+    videoUrl:
+      'https://mega.nz/embed/Ss1CVZRS#vEBxJWv_1PjHbn47h9dejNhnZrx3DBYB_sekCtSuYfA',
     test: 'r-t-1',
     hint: 'lorem dfgdfg lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg rtgrgd dfgfgdfg fdddfffff ffffffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdf ff lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence',
     text: [

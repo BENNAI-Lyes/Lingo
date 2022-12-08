@@ -150,22 +150,29 @@ const Lesson = () => {
             </div>
           )}
 
-          {currentLesson.video && (
+          {currentLesson.videoUrl && (
             <div className="video">
               <h4>Video:</h4>
-              <video
-                src="https://drive.google.com/file/d/1jJ9hR4eEQdyLRfQqZBXGsY3DM1Y0s1ev/view"
-                controls
-              ></video>
+              <iframe
+                title="watch and listen to learn"
+                frameborder="0"
+                src={currentLesson.videoUrl}
+                allowfullscreen
+              ></iframe>
             </div>
           )}
 
-          {currentLesson.audio && (
+          {/* {currentLesson.audioUrl && (
             <div className="audio">
               <h4>Audio:</h4>
-              <audio src={currentLesson.audio} controls></audio>
+              <audio
+                src={
+                  'https://mega.nz/file/31UBWKKB#qFGEPsHGUXGuG6XQOYIFgdk7HG-I5Eg2LUBgzb2wQz4'
+                }
+                controls
+              ></audio>
             </div>
-          )}
+          )} */}
 
           {currentLesson.text && (
             <div className="text">
