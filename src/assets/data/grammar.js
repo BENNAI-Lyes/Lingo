@@ -48,4 +48,15 @@ export const grammar = [
     id: 10,
     title: 'sequence 10: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff df',
   },
+   {
+    id: 11,
+    title:
+      'sequence 01: grammar fdddfffff fffffffffm dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dflorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffm dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffm dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff df',
+    cat: 'reading',
+    audio: 'r1.mp3',
+    video: 'r1.mp4',
+    test: 'r-t-1',
+    hint: 'lorem dfgdfg lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg rtgrgd dfgfgdfg fdddfffff ffffffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdf ff lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence',
+    text: 'sequence 01: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff lorem dfgdfg rtgrgd dfgfgdfg fdddfffff ffffffg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff df',
+  },
 ];
