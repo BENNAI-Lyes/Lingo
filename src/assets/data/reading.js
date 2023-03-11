@@ -170,7 +170,7 @@ export const reading = [
 ];
 export const reading = [
   {
-    id: 2,
+    id: 1,
     title:
       'sequence 01: Sequence 01: Itineraries: My Extraordinary Trip “part 01”',
     cat: 'reading',
@@ -196,17 +196,29 @@ export const reading = [
             answers: ['True', 'False'],
             correctAnswer: 'True',
           },
-        ],
-      },
-      // true false
-      {
-        type: 'trueFalse',
-        list: [
           {
             question:
-              '1.	They had a one weak trip. ',
+              '2.	They didn’t take any luggage with them. ',
+            answers: ['True', 'False'],
+            correctAnswer: 'False',
+          },
+          {
+            question:
+              '3.	They visited Makam Chahid and El Hamma Garden and the National Museum.',
             answers: ['True', 'False'],
             correctAnswer: 'True',
+          },
+          {
+            question:
+              '4.	The pupils were allowed to take pictures in the museum. ',
+            answers: ['True', 'False'],
+            correctAnswer: 'False',
+          },
+          {
+            question:
+              'have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem ipsum dolor sit amet, consectetur?',
+            answers: ['True', 'False'],
+            correctAnswer: 'False',
           },
         ],
       },
