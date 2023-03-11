@@ -192,31 +192,19 @@ export const reading = [
               '1.	They had a one weak trip. ',
             answers: ['True', 'False'],
             correctAnswer: 'True',
-          },
+          },    
+        ],
+      },
+        // true false
+      {
+        type: 'trueFalse',
+        list: [
           {
             question:
-              '2.	They didn’t take any luggage with them. ',
-            answers: ['True', 'False'],
-            correctAnswer: 'False',
-          },
-          {
-            question:
-              '3.	They visited Makam Chahid and El Hamma Garden and the National Museum.',
+              '1.	They had a one weak trip. ',
             answers: ['True', 'False'],
             correctAnswer: 'True',
-          },
-          {
-            question:
-              '4.	The pupils were allowed to take pictures in the museum. ',
-            answers: ['True', 'False'],
-            correctAnswer: 'False',
-          },
-          {
-            question:
-              'have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem ipsum dolor sit amet, consectetur?',
-            answers: ['True', 'False'],
-            correctAnswer: 'False',
-          },
+          },    
         ],
       },
 
