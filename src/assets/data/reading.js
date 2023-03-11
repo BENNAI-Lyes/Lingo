@@ -2,7 +2,7 @@ export const reading = [
   {
     id: 1,
     title:
-      'sequence 01: Sequence 01: Itineraries: My Extraordinary Trip “part 01”',
+      'Sequence 01: Itineraries: My Extraordinary Trip “part 01”',
     cat: 'reading',
     audioUrl: 'audioReading_1',
     videoUrl:
@@ -195,7 +195,7 @@ export const reading = [
           },    
         ],
       },
-        // true false
+     // true false
       {
         type: 'trueFalse',
         list: [
