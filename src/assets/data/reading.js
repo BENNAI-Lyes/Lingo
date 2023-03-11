@@ -170,7 +170,7 @@ export const reading = [
 ];
 export const reading = [
   {
-    id: 1,
+    id: 2,
     title:
       'sequence 01: Sequence 01: Itineraries: My Extraordinary Trip “part 01”',
     cat: 'reading',
