@@ -8,11 +8,11 @@ export const reading = [
     videoUrl:
       'https://mega.nz/embed/Ss1CVZRS#vEBxJWv_1PjHbn47h9dejNhnZrx3DBYB_sekCtSuYfA',
     test: 'r-t-1',
-    hint: 'lorem dfgdfg lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg rtgrgd dfgfgdfg fdddfffff ffffffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdf ff lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence',
+    hint: 'Before reading the text, what do you think it is going to be about? ', 'what are the hints you relied on to guess? ', 'Read the text quickly and try to get the general idea of the text.',
     text: [
       'Our school organized a seven-days trip around Algeria for excellent learners. The departure was from our city; we all gathered near the school with our parents waiting for the couch, but before heading there, I made sure that all the necessary items (my mobile phone, money, my food, my clothes …etc) were all well-packed. Our final destination was Tlemcen with a stop-over for 2 nights in the capital city, Algiers. ',
       ' First, we travelled to Algiers. On the first day, we went on a sightseeing tour around the city. We visited Makam Elchahid and the National Museum of Moudjahid. The latter is a masterpiece located directly beneath Makam Chahid; it aims to collect, preserve and display objects and memories of the struggle against the French colonialism. At the entrance, the guards asked us to turn off our mobile-phones; therefore, I couldn’t take any pictures of that wonderful place. On the second day, we headed to another tourist attraction which was Elhamma Garden also known as “The Botanical Garden”. At first sight, I felt like “Alice in Wonderland”; it’s so huge and there are hundreds of different plants and high trees. ',
-      ' dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfsequence 01: lorem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff df',
+      
     ],
     exp: 'a coach: is a type of bus for travelling long distances',
     questions: [
@@ -139,30 +139,24 @@ export const reading = [
       //re-ordering
       {
         type: 'reOrdering',
-        question: 'make the correct order ?',
+        question: 'Reorder the forllowing ideas based on the their occurance on the text',
         answers: [
-          '1- have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem',
-          '2- have copmleat Lorem ipsum dolor sit amet,have ',
-          '3- have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem',
-          '4- have copmleat Lorem ipsum dolor sit amet,have copmleat Loremhave copmleat Lorem ipsum dolor sit amet,have copmleat Lorem',
-          '5- have copmleat Lorem ipsum dolor sit amet,have copmleat Lorem',
-          '6- have copmleat Lorem ipsum dolor sit amet',
-          '7- have copmleat Lorem ipsum dolor sit amet sdfsdf fdgdg fg',
-          '8- Lorem ipsum dolor sit amet',
-          '9- have copmleat Lorem  dolor sit amet',
-          '10- have copmleat Lorem ipsum dolor sit amet',
+          '1- They visited Alhamma Garden.',
+          '2- They Started their trip from their city. ',
+          '3- They packed their luggage.',
+          '4-They travelled to Algiers.',
         ],
-        correctAnswer: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
+        correctAnswer: ['3', '2', '4', '1',],
       },
 
       //filling the gaps
       {
         type: 'fillingGaps',
-        question: ' Read the text again and fill in the gaps with “National Museum/ Algiers/ Elhamma Garden/ the pupils',
+        question: ' Read the text again and fill in the gaps with “a.National Museum/ b.Algiers/ c.Elhamma Garden/ d.the pupils',
         answers: [
-          ' ----- ham dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfgdfg rtgrgd dfgfgdfg fdddffe ------ copmlem dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfgdfg rtgrgd dfgfgdfg fdddffat Lorem ----- ipsum dolor ----- sit am dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfgdfg rtgrgd dfgfgdfg fdddffmet,have ----- copmleatm dfgdfg rtgrgd dfgfgdfg fdddfffff fffffffffff dfgdfg rtgrgd dfgfgdfg fdddff Lorem',
+          ' .	 “we” refers to ----- ./ .	“The latter” refers to the ------ ./ .	“it” refers to ----- ./.	“the city” refers to    ----- .',
         ],
-        correctAnswer: ['a', 'b', 'c', 'd', 'e'],
+        correctAnswer: ['d', 'a', 'c', 'b',],
       },
     ],
   },
