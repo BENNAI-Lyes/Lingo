@@ -494,4 +494,307 @@ export const reading = [
       },
     ],
   },
+
+  //six
+  {
+    id: 6,
+    title: 'Sequence 02: My school ',
+    cat: 'reading',
+    audioUrl: 'audioReading_6',
+    videoUrl: '',
+    test: 'r-t-5',
+    hint: 'What do you think the text is about? ',
+    text: [
+      `School has been the most amazing and the funniest time I admired in my life. So when I look back on my class souvenirs, I feel that I lost something very precious, something that is impossible to return back. My teachers, my classmates, my school and every single moment I lived there left special emotions and exceptional feelings on me.`,
+      `I was lucky to have very respectful teachers who taught me sciences and important things in life, the hours I spent with them made from me a powerful person, they taught me to be self-confident, to believe in myself, to care for others, to be helpful, generous, courageous, perseverant, respectful and kind with others. Thanks to my teachers, I learnt plenty of moral values and good qualities. I was really affected by their personalities and behaviours. I remember Mr Talbi, my teacher of Arabic who has never been late or absent, he was known for his strictness, punctuality, rigor, sincerity and his mastery of work. This ideal man affected me and left a great impact on my personality, so I have always tried to be like him. Similarly, I will never forget my classmates Oussama, Yanis, Hani, Laid , Chafia and Bariza. They were my best friends since we spent unforgettable moments all together in our school. `,
+
+      `“Freedom News” February 12th,2020 By : Faouzi HADDAD`,
+    ],
+    exp: '',
+    questions: [
+      // multiple choice
+      //multiple choice
+      {
+        type: 'multipleChoice',
+        list: [
+          {
+            question: '•	a.	the type of document is: ',
+            answers: [
+              '1- a newspaper article',
+              '2- a website article',
+              '3- an interview',
+            ],
+            correctAnswer: '1- a newspaper article',
+          },
+          {
+            question: '• Date of publication is on: ',
+            answers: [
+              '1.	the twentieth of February 2020',
+              '2- the twelfth of February 2020.',
+              '3-	the second of February 2020',
+            ],
+            correctAnswer: '2- the twelfth of February 2020.',
+          },
+          {
+            question: '• There are … in the text:  ',
+            answers: [
+              '1.	two paragraphs',
+              '2- three paragraphs',
+              '3-	four paragraphs',
+            ],
+            correctAnswer: '1.	two paragraphs',
+          },
+        ],
+      },
+
+      // true false
+      {
+        type: 'trueFalse',
+        list: [
+          {
+            question: '1.	The author’s school has influenced his personality.',
+            answers: ['True', 'False'],
+            correctAnswer: 'True',
+          },
+          {
+            question: '2. He has become unkind',
+            answers: ['True', 'False'],
+            correctAnswer: 'False',
+          },
+          {
+            question: '3. Mr Talbi taught him science. ',
+            answers: ['True', 'False'],
+            correctAnswer: 'False',
+          },
+          {
+            question: '4. Mr Talbi is the author’s idol.',
+            answers: ['True', 'False'],
+            correctAnswer: 'True',
+          },
+        ],
+      },
+
+      //filling the gaps
+      {
+        type: 'fillingGaps',
+        question:
+          ' Read the text again and fill in the gaps with “ a. friends /b. learnt/c.  respectful/ d. never/ e. primary /f. taught “',
+        answers: [
+          ' .	 “ I Have  ----- ./ .	“” forgotten my  ------ ./ .	school. I met many  ----- ./.	and teachers. They  ----- ./ me different school subjects. I have  -----./ to be a helpful and -----./ person.',
+        ],
+        correctAnswer: ['d', 'e', 'a', 'f', 'b', 'c'],
+      },
+    ],
+  },
+
+  //seven
+  {
+    id: 7,
+    title: 'Sequence 02: My Primary school ',
+    cat: 'reading',
+    audioUrl: 'audioReading_7',
+    videoUrl: '',
+    test: 'r-t-7',
+    hint: '',
+    text: [
+      `I was about six years old when my father took me to school for the first time. I remember all the children were lined up. After some time, a teacher called my name. and sent me to the classroom. I became nervous as all the children were unknown to me. But within a short time, I found a girl who was our neighbour. We talked and sat on the same bench. Then the teacher entered the room. When he started talking, I felt fine. The teacher was very friendly and everything passed well. In my school days, I had many friends. We used to gossip and play and sometimes fight over silly things. I had two best friends. They were very nice and loyal to me. Every teacher in my school liked us. Although, we weren't brilliant students but we respected our elders and loved our youngers. My childhood was really amazing. These primary school memories fulfil my heart of joy and happiness. It was one of the best moments of my life. `,
+
+      `“Adapted from Emily’s diary`,
+    ],
+    exp: '',
+    questions: [
+      // true false
+      {
+        type: 'trueFalse',
+        list: [
+          {
+            question: '1.	the author went to the school with his mother. .',
+            answers: ['True', 'False'],
+            correctAnswer: 'False',
+          },
+          {
+            question: '2. the children were his friends',
+            answers: ['True', 'False'],
+            correctAnswer: 'False',
+          },
+          {
+            question: '3. the teacher was unfriendly. ',
+            answers: ['True', 'False'],
+            correctAnswer: 'False',
+          },
+          {
+            question: '4.	The author had a good childhood.  ',
+            answers: ['True', 'False'],
+            correctAnswer: 'True',
+          },
+        ],
+      },
+
+      //re-ordering
+      {
+        type: 'reOrdering',
+        question: 'Read the text again and reorder the ideas. ',
+        answers: [
+          '1- The author feels happy when he remembers his childhood memories.',
+          '2- The author went to the school with his father.',
+          '3- The author set with her neighbour on the bench.',
+          '4- The author had two best friends.',
+        ],
+        correctAnswer: ['2', '3', '4', '1'],
+      },
+
+      //multiple choice
+      {
+        type: 'multipleChoice',
+        list: [
+          {
+            question: '•	The author was talking about: ',
+            answers: [
+              '1- Herprimary school',
+              '2- her high school ',
+              '3- the university ',
+            ],
+            correctAnswer: '1- Herprimary school',
+          },
+          {
+            question: '•	The author got angry because: ',
+            answers: [
+              '1.	Her father left her.',
+              '2- she didn’t know anyone.',
+              '3-	The teacher yelled at her.',
+            ],
+            correctAnswer: '2- she didn’t know anyone.',
+          },
+        ],
+      },
+
+      //matching
+      {
+        type: 'matching',
+        question:
+          'read the text again and match each word with its definition ',
+        answers: {
+          g1: ['1- elders ', '2- forget ', '3- known ', '4-	sadness '],
+          g2: ['a- remember ', 'b- unknown', 'c- youngers ', 'd- happiness '],
+        },
+
+        correctAnswer: ['1-c', '2-a', '3-b', '4-d'],
+      },
+    ],
+  },
+
+  //eight
+  {
+    id: 8,
+    title: 'Sequence 02: My Future Plans',
+    cat: 'reading',
+    audioUrl: 'audioReading_8',
+    videoUrl: '',
+    test: 'r-t-8',
+    hint: '',
+    text: [
+      `Hello, Mark!`,
+      `Thank you for asking me about my future job. Well, when I was a child, I dreamt of being a photographer because I used to like taking photos of friends and editing them. Then everything has changed since I visited a children hospital in my city. From that point, I decided to become a doctor to help people and stop their suffering.`,
+      `As for now, I am concentrating my attention on finishing my studies at secondary school. Soon I will take the first important exam of my life - the baccalaureate exam. I won’t stop working hard until I pass. As you know, I’m good at English, math, biology and physics. So, if I get it with distinction, I‘ll study at the Medical University and my dreams may come true. I will try to get more information about that from my teachers and career counselors at my school who are very supportive, gentle and helpful.`,
+      ` It is very hard to choose a career before you finish high school, but always keep in mind that it is important to follow your dream and be good at what you choose.`,
+      `Best regards, `,
+      `Paul`,
+    ],
+    exp: '',
+    questions: [
+      //multiple choice
+      {
+        type: 'multipleChoice',
+        list: [
+          {
+            question: '• the type of document is: ',
+            answers: [
+              '1- an email',
+              '2-	an excerpt from a book ',
+              '3- an interview ',
+            ],
+            correctAnswer: '1- an email',
+          },
+          {
+            question: '•	the text is about:',
+            answers: [
+              '1.	childhood memories ',
+              '2- an ideal friend ',
+              '3-	dream career',
+            ],
+            correctAnswer: '3-	dream career',
+          },
+
+          {
+            question: '•	The author is a student at: ',
+            answers: [
+              '1.	Primary school',
+              '2- Middle school ',
+              '3-	Secondary School',
+            ],
+            correctAnswer: '3-	Secondary School',
+          },
+
+          {
+            question: '•	What was the author’s former dream career?  ',
+            answers: [
+              '1.	a photographer',
+              '2- a businessman ',
+              '3-	an engineer ',
+            ],
+            correctAnswer: '1.	a photographer',
+          },
+
+          {
+            question: '•	what is his current dream career? ',
+            answers: ['1.	a photographer ', '2- a doctor', '3-	an architect  '],
+            correctAnswer: '2- a doctor',
+          },
+
+          {
+            question: '•	when has he changed his changed his mind?',
+            answers: [
+              '1.	before visiting hospitalized children',
+              '2- after visiting hospitalized children',
+              '3-	when he got sick.',
+            ],
+            correctAnswer: '2- after visiting hospitalized children',
+          },
+
+          {
+            question: '•	The author is good at: ',
+            answers: [
+              '1.	Biology, English, Physics',
+              '2- Biology, Physics, Geography',
+              '3-	Maths, Civic Education, English',
+            ],
+            correctAnswer: '1.	Biology, English, Physics',
+          },
+        ],
+      },
+
+      // true false
+      {
+        type: 'trueFalse',
+        list: [
+          {
+            question: '1.	Paul is the sender of the email',
+            answers: ['True', 'False'],
+            correctAnswer: 'True',
+          },
+          {
+            question: '2.	The author’s teachers are unsupportive.',
+            answers: ['True', 'False'],
+            correctAnswer: 'False',
+          },
+          {
+            question:
+              '3.	It is easy to choose a career before finishing high school.',
+            answers: ['True', 'False'],
+            correctAnswer: 'False',
+          },
+        ],
+      },
+    ],
+  },
 ];
