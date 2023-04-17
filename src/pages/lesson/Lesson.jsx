@@ -8,7 +8,6 @@ import { vocabulary } from '../../assets/data/vocabulary';
 import { writing } from '../../assets/data/writing';
 
 import emailjs from '@emailjs/browser';
-
 import { useRef, useState } from 'react';
 
 const Lesson = () => {
@@ -24,6 +23,8 @@ const Lesson = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [text, setText] = useState('');
+
+  const [clickedAnswer, setClickedAnswer] = useState({});
 
   const id = parseInt(useLocation().pathname.split('/')[2]);
   const category = useLocation().pathname.split('/')[1];
@@ -108,8 +109,8 @@ const Lesson = () => {
     }
   };
 
+  //send email
   const form = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -133,6 +134,11 @@ const Lesson = () => {
       );
   };
 
+  const handelClickedAnswer = (clickedQuestion) => {
+    console.log(clickedAnswer);
+    setClickedAnswer({ ...clickedAnswer, [clickedQuestion]: clickedQuestion });
+  };
+
   return (
     <div className="lesson">
       <div className="container">
@@ -143,6 +149,7 @@ const Lesson = () => {
           </h1>
           <h2> {currentLesson.title} </h2>
 
+          {/* HINT */}
           {currentLesson.hint && (
             <div className="audio">
               <h4>Instructions:</h4>
@@ -150,6 +157,7 @@ const Lesson = () => {
             </div>
           )}
 
+          {/* VIDEO */}
           {currentLesson.videoUrl && (
             <div className="video">
               <h4>Video:</h4>
@@ -162,18 +170,7 @@ const Lesson = () => {
             </div>
           )}
 
-          {/* {currentLesson.audioUrl && (
-            <div className="audio">
-              <h4>Audio:</h4>
-              <audio
-                src={
-                  'https://mega.nz/file/31UBWKKB#qFGEPsHGUXGuG6XQOYIFgdk7HG-I5Eg2LUBgzb2wQz4'
-                }
-                controls
-              ></audio>
-            </div>
-          )} */}
-
+          {/* TEXTS */}
           {currentLesson.text && (
             <div className="text">
               <h4>Text:</h4>
@@ -184,6 +181,7 @@ const Lesson = () => {
             </div>
           )}
 
+          {/* EXPLANATION */}
           {currentLesson.exp && (
             <div className="text">
               <h4>Explanation:</h4>
@@ -194,338 +192,350 @@ const Lesson = () => {
 
           <hr />
 
-          <div className="test">
-            <h2>test:</h2>
-            <p>
-              if you have copmleat Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit. Harum aspernatur libero beatae quaerat ea vel.{' '}
-            </p>
-
-            <div className="questionsContainer">
-              {currentLesson.questions.map((ques, i) => {
-                return (
-                  <div className="questionsItem trueFalse" key={i}>
-                    {ques.type === 'trueFalse' ? (
-                      <div className="trueFalse">
-                        <h3>
-                          Activity{' '}
-                          {i === 0
-                            ? 'One'
-                            : i === 1
-                            ? 'Two'
-                            : i === 2
-                            ? 'Three'
-                            : i === 3
-                            ? 'Four'
-                            : 'Five'}
-                          :
-                        </h3>
-                        {ques.list.map((q, i) => (
-                          <div className="trueFalseItem" key={i}>
-                            <div className="question">{q.question}</div>
-                            <div className="answers">
-                              {q.answers.map((a, i) => (
-                                <div
-                                  key={i}
-                                  className="answer"
-                                  onClick={() =>
-                                    handelScore(
-                                      a,
-                                      q.correctAnswer,
-                                      'trueFalse',
-                                      ques.list.length
-                                    )
-                                  }
-                                >
+          {currentLesson.cat !== 'pleasure' && (
+            <div className="test">
+              <h2>test:</h2>
+              <p>if you have study the lesson feel free to test your self</p>
+              {/* *********** QUESTIONS ********** */}
+              <div className="questionsContainer">
+                {currentLesson.questions?.map((ques, i) => {
+                  return (
+                    <div className="questionsItem trueFalse" key={i}>
+                      {ques.type === 'trueFalse' ? (
+                        <div className="trueFalse">
+                          <h3>
+                            Activity{' '}
+                            {i === 0
+                              ? 'One'
+                              : i === 1
+                              ? 'Two'
+                              : i === 2
+                              ? 'Three'
+                              : i === 3
+                              ? 'Four'
+                              : 'Five'}
+                            :
+                          </h3>
+                          {ques.list.map((q, i) => (
+                            <div className="trueFalseItem" key={i}>
+                              <div className="question">{q.question}</div>
+                              <div className="answers">
+                                {q.answers.map((a, i) => (
+                                  <div
+                                    key={i}
+                                    className={`answer ${
+                                      clickedAnswer.a?.id && 'clicked'
+                                    }`}
+                                    onClick={() => {
+                                      handelScore(
+                                        a.text,
+                                        q.correctAnswer,
+                                        'trueFalse',
+                                        ques.list.length
+                                      );
+                                      handelClickedAnswer(a.id);
+                                    }}
+                                  >
+                                    {a.text}
+                                  </div>
+                                ))}
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      ) : ques.type === 'multipleChoice' ? (
+                        <div className="questionsItem multipleChoice">
+                          <h3>
+                            Activity
+                            {i === 0
+                              ? 'One'
+                              : i === 1
+                              ? 'Two'
+                              : i === 2
+                              ? 'Three'
+                              : i === 3
+                              ? 'Four'
+                              : 'Five'}
+                            :
+                          </h3>
+                          {ques.list.map((q, i) => (
+                            <div className="multipleChoiceItem" key={i}>
+                              <div className="question">{q.question}</div>
+                              <div className="answers">
+                                {q.answers.map((a, i) => (
+                                  <div
+                                    key={i}
+                                    className={`answer ${
+                                      clickedAnswer.a && 'clicked'
+                                    }`}
+                                    onClick={() => {
+                                      handelScore(
+                                        a,
+                                        q.correctAnswer,
+                                        'multipleChoice',
+                                        ques.list.length
+                                      );
+                                      handelClickedAnswer(a);
+                                    }}
+                                  >
+                                    {a}
+                                  </div>
+                                ))}
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      ) : ques.type === 'matching' ? (
+                        <div className="questionsItem matching">
+                          <h3>
+                            Activity{' '}
+                            {i === 0
+                              ? 'One'
+                              : i === 1
+                              ? 'Two'
+                              : i === 2
+                              ? 'Three'
+                              : i === 3
+                              ? 'Four'
+                              : 'Five'}
+                            :
+                          </h3>
+                          <div className="question">{ques.question}</div>
+                          <div className="answers">
+                            <div className="left">
+                              {ques.answers.g1.map((a, i) => (
+                                <div key={i} className="answer">
+                                  {a}
+                                </div>
+                              ))}
+                            </div>
+                            <div className="right">
+                              {ques.answers.g2.map((a, i) => (
+                                <div key={i} className="answer">
                                   {a}
                                 </div>
                               ))}
                             </div>
                           </div>
-                        ))}
-                      </div>
-                    ) : ques.type === 'multipleChoice' ? (
-                      <div className="questionsItem multipleChoice">
-                        <h3>
-                          Activity
-                          {i === 0
-                            ? 'One'
-                            : i === 1
-                            ? 'Two'
-                            : i === 2
-                            ? 'Three'
-                            : i === 3
-                            ? 'Four'
-                            : 'Five'}
-                          :
-                        </h3>
-                        {ques.list.map((q, i) => (
-                          <div className="multipleChoiceItem" key={i}>
-                            <div className="question">{q.question}</div>
-                            <div className="answers">
-                              {q.answers.map((a, i) => (
-                                <div
-                                  key={i}
-                                  className="answer"
-                                  onClick={() =>
-                                    handelScore(
-                                      a,
-                                      q.correctAnswer,
-                                      'multipleChoice',
-                                      ques.list.length
-                                    )
-                                  }
-                                >
-                                  {a}
-                                </div>
-                              ))}
-                            </div>
+                          <div className="matchingForm">
+                            <form onSubmit={handelSubmit}>
+                              <label htmlFor="matchingAns">Your answer:</label>
+                              <input
+                                type="text"
+                                className="matchingAns"
+                                placeholder="Enter the correct match here like: 1-e, 2-a ...."
+                                value={matchingAns}
+                                onChange={(e) => setMatchingAns(e.target.value)}
+                              />
+                              <button
+                                type="submit"
+                                onClick={() =>
+                                  handelScore(
+                                    'matching',
+                                    ques.correctAnswer,
+                                    'matching'
+                                  )
+                                }
+                              >
+                                send
+                              </button>
+                            </form>
                           </div>
-                        ))}
-                      </div>
-                    ) : ques.type === 'matching' ? (
-                      <div className="questionsItem matching">
-                        <h3>
-                          Activity{' '}
-                          {i === 0
-                            ? 'One'
-                            : i === 1
-                            ? 'Two'
-                            : i === 2
-                            ? 'Three'
-                            : i === 3
-                            ? 'Four'
-                            : 'Five'}
-                          :
-                        </h3>
-                        <div className="question">{ques.question}</div>
-                        <div className="answers">
-                          <div className="left">
-                            {ques.answers.g1.map((a, i) => (
+                        </div>
+                      ) : ques.type === 'reOrdering' ? (
+                        <div className="questionsItem reOrdering">
+                          <h3>
+                            Activity{' '}
+                            {i === 0
+                              ? 'One'
+                              : i === 1
+                              ? 'Two'
+                              : i === 2
+                              ? 'Three'
+                              : i === 3
+                              ? 'Four'
+                              : 'Five'}
+                            :
+                          </h3>
+                          <div className="question">{ques.question}</div>
+                          <div className="answers">
+                            {ques.answers.map((a, i) => (
                               <div key={i} className="answer">
                                 {a}
                               </div>
                             ))}
                           </div>
-                          <div className="right">
-                            {ques.answers.g2.map((a, i) => (
+
+                          <div className="reOrderingForm">
+                            <form onSubmit={handelSubmit}>
+                              <label htmlFor="reOrderingAns">
+                                Your answer:
+                              </label>
+                              <input
+                                type="text"
+                                className="reOrderingAns"
+                                placeholder="Enter the right order here like: 1,6,4,3 ...."
+                                value={reOrderingAns}
+                                onChange={(e) =>
+                                  setReOrderingAns(e.target.value)
+                                }
+                              />
+                              <button
+                                type="submit"
+                                onClick={() =>
+                                  handelScore(
+                                    'reOrdering',
+                                    ques.correctAnswer,
+                                    'reOrdering'
+                                  )
+                                }
+                              >
+                                send
+                              </button>
+                            </form>
+                          </div>
+                        </div>
+                      ) : (
+                        <div className="questionsItem fillingGaps">
+                          <h3>
+                            Activity{' '}
+                            {i === 0
+                              ? 'One'
+                              : i === 1
+                              ? 'Two'
+                              : i === 2
+                              ? 'Three'
+                              : i === 3
+                              ? 'Four'
+                              : 'Five'}
+                            :
+                          </h3>
+                          <div className="question">{ques.question}</div>
+                          <div className="answers">
+                            {ques.answers.map((a, i) => (
                               <div key={i} className="answer">
                                 {a}
                               </div>
                             ))}
                           </div>
-                        </div>
-                        <div className="matchingForm">
-                          <form onSubmit={handelSubmit}>
-                            <label htmlFor="matchingAns">Your answer:</label>
-                            <input
-                              type="text"
-                              className="matchingAns"
-                              placeholder="Enter the correct match here like: 1-e, 2-a ...."
-                              value={matchingAns}
-                              onChange={(e) => setMatchingAns(e.target.value)}
-                            />
-                            <button
-                              type="submit"
-                              onClick={() =>
-                                handelScore(
-                                  'matching',
-                                  ques.correctAnswer,
-                                  'matching'
-                                )
-                              }
-                            >
-                              send
-                            </button>
-                          </form>
-                        </div>
-                      </div>
-                    ) : ques.type === 'reOrdering' ? (
-                      <div className="questionsItem reOrdering">
-                        <h3>
-                          Activity{' '}
-                          {i === 0
-                            ? 'One'
-                            : i === 1
-                            ? 'Two'
-                            : i === 2
-                            ? 'Three'
-                            : i === 3
-                            ? 'Four'
-                            : 'Five'}
-                          :
-                        </h3>
-                        <div className="question">{ques.question}</div>
-                        <div className="answers">
-                          {ques.answers.map((a, i) => (
-                            <div key={i} className="answer">
-                              {a}
-                            </div>
-                          ))}
-                        </div>
 
-                        <div className="reOrderingForm">
-                          <form onSubmit={handelSubmit}>
-                            <label htmlFor="reOrderingAns">Your answer:</label>
-                            <input
-                              type="text"
-                              className="reOrderingAns"
-                              placeholder="Enter the right order here like: 1,6,4,3 ...."
-                              value={reOrderingAns}
-                              onChange={(e) => setReOrderingAns(e.target.value)}
-                            />
-                            <button
-                              type="submit"
-                              onClick={() =>
-                                handelScore(
-                                  'reOrdering',
-                                  ques.correctAnswer,
-                                  'reOrdering'
-                                )
-                              }
-                            >
-                              send
-                            </button>
-                          </form>
+                          <div className="fillingGapsForm">
+                            <form onSubmit={handelSubmit}>
+                              <label htmlFor="fillingGapsAns">
+                                Your answer:
+                              </label>
+                              <input
+                                type="text"
+                                className="fillingGapsAns"
+                                placeholder="Enter the gaps with the same order here like: ghfhg,ghgh ...."
+                                value={fillingGapsAns}
+                                onChange={(e) =>
+                                  setFillingGapsAns(e.target.value)
+                                }
+                              />
+                              <button
+                                type="submit"
+                                onClick={() =>
+                                  handelScore(
+                                    'fillingGaps',
+                                    ques.correctAnswer,
+                                    'fillingGaps'
+                                  )
+                                }
+                              >
+                                send
+                              </button>
+                            </form>
+                          </div>
                         </div>
-                      </div>
-                    ) : (
-                      <div className="questionsItem fillingGaps">
-                        <h3>
-                          Activity{' '}
-                          {i === 0
-                            ? 'One'
-                            : i === 1
-                            ? 'Two'
-                            : i === 2
-                            ? 'Three'
-                            : i === 3
-                            ? 'Four'
-                            : 'Five'}
-                          :
-                        </h3>
-                        <div className="question">{ques.question}</div>
-                        <div className="answers">
-                          {ques.answers.map((a, i) => (
-                            <div key={i} className="answer">
-                              {a}
-                            </div>
-                          ))}
-                        </div>
-
-                        <div className="fillingGapsForm">
-                          <form onSubmit={handelSubmit}>
-                            <label htmlFor="fillingGapsAns">Your answer:</label>
-                            <input
-                              type="text"
-                              className="fillingGapsAns"
-                              placeholder="Enter the gaps with the same order here like: ghfhg,ghgh ...."
-                              value={fillingGapsAns}
-                              onChange={(e) =>
-                                setFillingGapsAns(e.target.value)
-                              }
-                            />
-                            <button
-                              type="submit"
-                              onClick={() =>
-                                handelScore(
-                                  'fillingGaps',
-                                  ques.correctAnswer,
-                                  'fillingGaps'
-                                )
-                              }
-                            >
-                              send
-                            </button>
-                          </form>
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                );
-              })}
-            </div>
-
-            {currentLesson.cat === 'writing' && (
-              <div className="email">
-                <form ref={form} onSubmit={sendEmail}>
-                  <h2>Your Text:</h2>
-                  <div className="info">
-                    <input
-                      type="text"
-                      name="from_name"
-                      placeholder="Your Name ..."
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
-                    />
-                    <input
-                      type="email"
-                      name="from_email"
-                      placeholder="Your Email ..."
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                    />
-                  </div>
-                  <textarea
-                    name="text"
-                    cols="30"
-                    rows="10"
-                    placeholder="send text to email teacher here ..."
-                    value={text}
-                    onChange={(e) => setText(e.target.value)}
-                  ></textarea>
-                  <button>send</button>
-                </form>
-              </div>
-            )}
-
-            <div className="resultContainer">
-              <button className="check" onClick={() => setOpenModal(true)}>
-                Result
-              </button>
-
-              {openModal && (
-                <div className="result">
-                  <div className="content">
-                    <div
-                      className="close"
-                      onClick={() => {
-                        setOpenModal(false);
-                        setScore(0);
-                        setFillingGapsAns('');
-                        setMatchingAns('');
-                        setReOrderingAns('');
-                        navigate(`/${currentLesson.cat}/${id}`);
-                      }}
-                    >
-                      X
+                      )}
                     </div>
-                    <h2>Result:</h2>
-                    <h4>
-                      You got: <span> {score.toFixed(2)} /20</span>{' '}
-                    </h4>
-                    <h5 className={score < 12 ? `fail` : `success`}>
-                      {' '}
-                      {score < 10
-                        ? 'Failing'
-                        : score >= 10 && score < 12
-                        ? 'Below Average'
-                        : score >= 12 && score < 14
-                        ? 'Average'
-                        : score >= 14 && score < 16
-                        ? 'Very Good'
-                        : 'Excellent'}
-                    </h5>
-                    <h6 className={score < 12 ? `fail` : `success`}>
-                      {score < 12
-                        ? `Pleas study again this lesson.`
-                        : `You can pass to the next lesson.`}
-                    </h6>
-                  </div>
+                  );
+                })}
+              </div>
+              {/* //writing */}
+              {currentLesson.cat === 'writing' && (
+                <div className="email">
+                  <form ref={form} onSubmit={sendEmail}>
+                    <h2>Your Text:</h2>
+                    <div className="info">
+                      <input
+                        type="text"
+                        name="from_name"
+                        placeholder="Your Name ..."
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                      />
+                      <input
+                        type="email"
+                        name="from_email"
+                        placeholder="Your Email ..."
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                      />
+                    </div>
+                    <textarea
+                      name="text"
+                      cols="30"
+                      rows="10"
+                      placeholder="send text to email teacher here ..."
+                      value={text}
+                      onChange={(e) => setText(e.target.value)}
+                    ></textarea>
+                    <button>send</button>
+                  </form>
                 </div>
               )}
+              {/* result */}(
+              <div className="resultContainer">
+                <button className="check" onClick={() => setOpenModal(true)}>
+                  Result
+                </button>
+
+                {openModal && (
+                  <div className="result">
+                    <div className="content">
+                      <div
+                        className="close"
+                        onClick={() => {
+                          setOpenModal(false);
+                          setScore(0);
+                          setFillingGapsAns('');
+                          setMatchingAns('');
+                          setReOrderingAns('');
+                          navigate(`/${currentLesson.cat}/${id}`);
+                        }}
+                      >
+                        X
+                      </div>
+                      <h2>Result:</h2>
+                      <h4>
+                        You got: <span> {score.toFixed(2)} /20</span>{' '}
+                      </h4>
+                      <h5 className={score < 12 ? `fail` : `success`}>
+                        {' '}
+                        {score < 10
+                          ? 'Failing'
+                          : score >= 10 && score < 12
+                          ? 'Below Average'
+                          : score >= 12 && score < 14
+                          ? 'Average'
+                          : score >= 14 && score < 16
+                          ? 'Very Good'
+                          : 'Excellent'}
+                      </h5>
+                      <h6 className={score < 12 ? `fail` : `success`}>
+                        {score < 12
+                          ? `Pleas study again this lesson.`
+                          : `You can pass to the next lesson.`}
+                      </h6>
+                    </div>
+                  </div>
+                )}
+              </div>
+              )
             </div>
-          </div>
+          )}
         </div>
       </div>
     </div>

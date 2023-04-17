@@ -237,7 +237,8 @@
 
                 &:hover,
                 &:active,
-                &.active {
+                &.active,
+                &.clicked {
                   background-color: var(--primary-color-light);
                   color: #ded1f1;
                 }

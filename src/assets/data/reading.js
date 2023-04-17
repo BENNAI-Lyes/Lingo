@@ -20,24 +20,36 @@ export const reading = [
         list: [
           {
             question: '1.	They had a one weak trip. ',
-            answers: ['True', 'False'],
+            answers: [
+              { id: 'a1-1', text: 'True' },
+              { id: 'a1-2', text: 'True' },
+            ],
             correctAnswer: 'True',
           },
           {
             question: '2.	They didn’t take any luggage with them. ',
-            answers: ['True', 'False'],
+            answers: [
+              { id: 'a2-1', text: 'True' },
+              { id: 'a2-2', text: 'True' },
+            ],
             correctAnswer: 'False',
           },
           {
             question:
               '3.	They visited Makam Chahid and El Hamma Garden and the National Museum.',
-            answers: ['True', 'False'],
+            answers: [
+              { id: 'a3-1', text: 'True' },
+              { id: 'a3-2', text: 'True' },
+            ],
             correctAnswer: 'True',
           },
           {
             question:
               '4.	The pupils were allowed to take pictures in the museum. ',
-            answers: ['True', 'False'],
+            answers: [
+              { id: 'a4-1', text: 'True' },
+              { id: 'a4-2', text: 'True' },
+            ],
             correctAnswer: 'False',
           },
         ],
@@ -169,22 +181,34 @@ export const reading = [
           {
             question:
               '1. Zohra Dhrif realised that she can never be equal to the French girls after the reaction of her friend Rosalyne',
-            answers: ['True', 'False'],
+            answers: [
+              { id: 'a1-1', text: 'True' },
+              { id: 'a1-2', text: 'True' },
+            ],
             correctAnswer: 'True',
           },
           {
             question: '2. Zohra Dhrif didn’t study at a French School. ',
-            answers: ['True', 'False'],
+            answers: [
+              { id: 'a2-1', text: 'True' },
+              { id: 'a2-2', text: 'True' },
+            ],
             correctAnswer: 'False',
           },
           {
             question: '3. Zohra Dhrif used to eat croissant  at breakfast.  ',
-            answers: ['True', 'False'],
+            answers: [
+              { id: 'a3-1', text: 'True' },
+              { id: 'a3-2', text: 'True' },
+            ],
             correctAnswer: 'False',
           },
           {
             question: '4.	Zohra Dhrif didn’t fail at her 6th grade exam',
-            answers: ['True', 'False'],
+            answers: [
+              { id: 'a4-1', text: 'True' },
+              { id: 'a4-2', text: 'True' },
+            ],
             correctAnswer: 'True',
           },
         ],
@@ -237,31 +261,6 @@ export const reading = [
 
         correctAnswer: ['1-c', '2-d', '3-a', '4-b'],
       },
-
-      //re-ordering
-      // {
-      //   type: 'reOrdering',
-      //   question:
-      //     'Reorder the following ideas based on the their occurrence on the text',
-      //   answers: [
-      //     '1- They visited Alhamma Garden.',
-      //     '2- They Started their trip from their city.',
-      //     '3- They packed their luggage.',
-      //     '4-They travelled to Algiers.',
-      //   ],
-      //   correctAnswer: ['3', '2', '4', '1'],
-      // },
-
-      //filling the gaps
-      // {
-      //   type: 'fillingGaps',
-      //   question:
-      //     ' Read the text again and fill in the gaps with “a.National Museum/ b.Algiers/ c.Elhamma Garden/ d.the pupils',
-      //   answers: [
-      //     ' .	 “we” refers to ----- ./ .	“The latter” refers to the ------ ./ .	“it” refers to ----- ./.	“the city” refers to    ----- .',
-      //   ],
-      //   correctAnswer: ['d', 'a', 'c', 'b'],
-      // },
     ],
   },
 
@@ -288,12 +287,18 @@ export const reading = [
         list: [
           {
             question: '1.	Ceyanne was attacked by a dog.',
-            answers: ['True', 'False'],
+            answers: [
+              { id: 'a1-1', text: 'True' },
+              { id: 'a1-2', text: 'True' },
+            ],
             correctAnswer: 'True',
           },
           {
             question: '2.	All Ceyann’s scars were healed. ',
-            answers: ['True', 'False'],
+            answers: [
+              { id: 'a2-1', text: 'True' },
+              { id: 'a2-2', text: 'True' },
+            ],
             correctAnswer: 'False',
           },
         ],
@@ -350,29 +355,41 @@ export const reading = [
         list: [
           {
             question: '1. Ceyanne got bullied at the primary school ',
-            answers: ['True', 'False'],
+            answers: [
+              { id: 'a1-1', text: 'True' },
+              { id: 'a1-2', text: 'True' },
+            ],
             correctAnswer: 'True',
           },
           {
             question: '2. She was bullied for 5 years',
-            answers: ['True', 'False'],
+            answers: [
+              { id: 'a2-1', text: 'True' },
+              { id: 'a2-2', text: 'True' },
+            ],
             correctAnswer: 'True',
           },
         ],
       },
 
+      // true false
       {
         type: 'trueFalse',
         list: [
           {
-            question: '1.She asked for help during primary school.  ',
-            answers: ['True', 'False'],
+            question: '1. She asked for help during primary school.',
+            answers: [
+              { id: 'a3-1', text: 'True' },
+              { id: 'a3-2', text: 'True' },
+            ],
             correctAnswer: 'False',
           },
           {
-            question:
-              '2. She has started feeling better after primary school. ',
-            answers: ['True', 'False'],
+            question: '2. She has started feeling better after primary school.',
+            answers: [
+              { id: 'a4-1', text: 'True' },
+              { id: 'a4-2', text: 'True' },
+            ],
             correctAnswer: 'False',
           },
         ],
@@ -402,54 +419,6 @@ export const reading = [
           },
         ],
       },
-
-      //matching
-      {
-        type: 'matching',
-        question:
-          'read the text again and match each word with its definition ',
-        answers: {
-          g1: [
-            '1-	The departure',
-            '2- Final Destination ',
-            '3- Garden',
-            '4-	tourist attraction',
-          ],
-          g2: [
-            'a- a place full of plants and trees ',
-            'b- a place that you start your trip from',
-            'c- a place people like to visit during holidays because it is beautiful and famous.',
-            'd- a place you visit at the end of the trip ',
-          ],
-        },
-
-        correctAnswer: ['1-b', '2-d', '3-a', '4-c'],
-      },
-
-      //re-ordering
-      {
-        type: 'reOrdering',
-        question:
-          'Reorder the following ideas based on the their occurrence on the text',
-        answers: [
-          '1- They visited Alhamma Garden.',
-          '2- They Started their trip from their city.',
-          '3- They packed their luggage.',
-          '4-They travelled to Algiers.',
-        ],
-        correctAnswer: ['3', '2', '4', '1'],
-      },
-
-      //filling the gaps
-      {
-        type: 'fillingGaps',
-        question:
-          ' Read the text again and fill in the gaps with “a.National Museum/ b.Algiers/ c.Elhamma Garden/ d.the pupils',
-        answers: [
-          ' .	 “we” refers to ----- ./ .	“The latter” refers to the ------ ./ .	“it” refers to ----- ./.	“the city” refers to    ----- .',
-        ],
-        correctAnswer: ['d', 'a', 'c', 'b'],
-      },
     ],
   },
 
@@ -477,17 +446,26 @@ export const reading = [
         list: [
           {
             question: '1.	Ceyanne started comparing herself to others.',
-            answers: ['True', 'False'],
+            answers: [
+              { id: 'a1-1', text: 'True' },
+              { id: 'a1-2', text: 'True' },
+            ],
             correctAnswer: 'True',
           },
           {
             question: '2. Her classmates words made her strong.',
-            answers: ['True', 'False'],
+            answers: [
+              { id: 'a2-1', text: 'True' },
+              { id: 'a2-2', text: 'True' },
+            ],
             correctAnswer: 'False',
           },
           {
             question: '3. Ceyanne’s father helped her to feel better.',
-            answers: ['True', 'False'],
+            answers: [
+              { id: 'a3-1', text: 'True' },
+              { id: 'a3-2', text: 'True' },
+            ],
             correctAnswer: 'True',
           },
         ],
@@ -553,22 +531,34 @@ export const reading = [
         list: [
           {
             question: '1.	The author’s school has influenced his personality.',
-            answers: ['True', 'False'],
+            answers: [
+              { id: 'a1-1', text: 'True' },
+              { id: 'a1-2', text: 'True' },
+            ],
             correctAnswer: 'True',
           },
           {
             question: '2. He has become unkind',
-            answers: ['True', 'False'],
+            answers: [
+              { id: 'a2-1', text: 'True' },
+              { id: 'a2-2', text: 'True' },
+            ],
             correctAnswer: 'False',
           },
           {
             question: '3. Mr Talbi taught him science. ',
-            answers: ['True', 'False'],
+            answers: [
+              { id: 'a3-1', text: 'True' },
+              { id: 'a3-2', text: 'True' },
+            ],
             correctAnswer: 'False',
           },
           {
             question: '4. Mr Talbi is the author’s idol.',
-            answers: ['True', 'False'],
+            answers: [
+              { id: 'a4-1', text: 'True' },
+              { id: 'a4-2', text: 'True' },
+            ],
             correctAnswer: 'True',
           },
         ],
@@ -609,22 +599,34 @@ export const reading = [
         list: [
           {
             question: '1.	the author went to the school with his mother. .',
-            answers: ['True', 'False'],
+            answers: [
+              { id: 'a1-1', text: 'True' },
+              { id: 'a1-2', text: 'True' },
+            ],
             correctAnswer: 'False',
           },
           {
             question: '2. the children were his friends',
-            answers: ['True', 'False'],
+            answers: [
+              { id: 'a2-1', text: 'True' },
+              { id: 'a2-2', text: 'True' },
+            ],
             correctAnswer: 'False',
           },
           {
             question: '3. the teacher was unfriendly. ',
-            answers: ['True', 'False'],
+            answers: [
+              { id: 'a3-1', text: 'True' },
+              { id: 'a3-2', text: 'True' },
+            ],
             correctAnswer: 'False',
           },
           {
             question: '4.	The author had a good childhood.  ',
-            answers: ['True', 'False'],
+            answers: [
+              { id: 'a4-1', text: 'True' },
+              { id: 'a4-2', text: 'True' },
+            ],
             correctAnswer: 'True',
           },
         ],
@@ -779,21 +781,883 @@ export const reading = [
         list: [
           {
             question: '1.	Paul is the sender of the email',
-            answers: ['True', 'False'],
+            answers: [
+              { id: 'a1-1', text: 'True' },
+              { id: 'a1-2', text: 'True' },
+            ],
             correctAnswer: 'True',
           },
           {
             question: '2.	The author’s teachers are unsupportive.',
-            answers: ['True', 'False'],
+            answers: [
+              { id: 'a2-1', text: 'True' },
+              { id: 'a2-2', text: 'True' },
+            ],
             correctAnswer: 'False',
           },
           {
             question:
               '3.	It is easy to choose a career before finishing high school.',
-            answers: ['True', 'False'],
+            answers: [
+              { id: 'a3-1', text: 'True' },
+              { id: 'a3-2', text: 'True' },
+            ],
             correctAnswer: 'False',
           },
         ],
+      },
+    ],
+  },
+
+  //nine
+  {
+    id: 9,
+    title: 'Sequence 02:  BELGACEM HABA',
+    cat: 'reading',
+    audioUrl: 'audioReading_9',
+    videoUrl: '',
+    test: 'r-t-9',
+    hint: '',
+    text: [
+      `I’m Professor Belgacem Haba, an Algerian researcher in the field of electronics. I was born in 1975 in El M’ghayer, El Oued. I was a descent kid. I always stayed outside the school doing my homework. People thought I was homeless! I was staying in the freezing weather alone. At home, I studied under the light of a candle. I was punctual, ambitious and hardworking. `,
+      `My parents helped me a lot and encouraged me to never give up, to be self-confident and work hard to turn my dreams into reality. Now that I’m one on the most successful researchers in the world, my advice for young students is to have a goal and work hard on it. Believe in yourself and never give up. I come from the desert, from one of the poorest villages where there was no electricity. I had an opportunity and I took it. So don’t miss opportunities!`,
+    ],
+    exp: '',
+    questions: [
+      //multiple choice
+      {
+        type: 'multipleChoice',
+        list: [
+          {
+            question: '• The name of the outstanding figure:  ',
+            answers: [
+              '1- Kateb Yacine',
+              '2-	Didouch Mourad ',
+              '3- Belkacem Haba',
+            ],
+            correctAnswer: '3- Belkacem Haba',
+          },
+          {
+            question: '•	Date of birth:',
+            answers: ['1.	1974', '2- 1975', '3-	1957'],
+            correctAnswer: '2- 1975',
+          },
+
+          {
+            question: '•	Place of birth: ',
+            answers: ['1.	Ouad Souf', '2- Biskara', '3-	Oran'],
+            correctAnswer: '1.	Ouad Souf',
+          },
+
+          {
+            question: '•	His job is ',
+            answers: ['1.	a journalist', '2- a researcher', '3-	a teacher'],
+            correctAnswer: '2- a researcher',
+          },
+        ],
+      },
+
+      // true false
+      {
+        type: 'trueFalse',
+        list: [
+          {
+            question:
+              '1.	Belkacem Haba was a punctual, decent and ambitious kid',
+            answers: [
+              { id: 'a1-1', text: 'True' },
+              { id: 'a1-2', text: 'True' },
+            ],
+            correctAnswer: 'True',
+          },
+          {
+            question: '2.	He did not give up his dream.',
+            answers: [
+              { id: 'a2-1', text: 'True' },
+              { id: 'a2-2', text: 'True' },
+            ],
+            correctAnswer: 'True',
+          },
+          {
+            question: '3.	He lived in a wealthy neighbourhood.  ',
+            answers: [
+              { id: 'a3-1', text: 'True' },
+              { id: 'a3-2', text: 'True' },
+            ],
+            correctAnswer: 'False',
+          },
+        ],
+      },
+
+      //filling the gaps
+      {
+        type: 'fillingGaps',
+        question:
+          ' Read the text again and fill in the gaps with: “a. born/ b. dream/ c. village/ d. ambitious”  ',
+        answers: [
+          ' .	 Belkacem Haba was  ----- ./ .	in a small  ------ ./ .	He was a very  ----- ./.	kid. He worked so hard to realize his    ----- .',
+        ],
+        correctAnswer: ['a', 'a', 'd', 'b'],
+      },
+    ],
+  },
+
+  //ten
+  {
+    id: 10,
+    title: 'Sequence 02:  Jennifer Bricker',
+    cat: 'reading',
+    audioUrl: 'audioReading_10',
+    videoUrl: '',
+    test: 'r-t-10',
+    hint: '',
+    text: [
+      `Jennifer Bricker, an American acrobat , was born without legs, and her parents abandoned her. She was then adopted by the Brickers, who taught her not to say “I can’t.” As a child, Jennifer was active in sports and decided to do gymnastics seriously. And at the age of 11, she won the Power Tumbling Championship in Illinois and was ranked the 4th at the Junior Olympic Games. `,
+      `She was fascinated by the American gymnast Dominque Moceanu, the gold medal winner at the 1996 Olympics. And at the age of 16, Jennifer discovered that her idol was actually her elder sister. And Jennifer reunited with her biological family. Later she participated in the Britney Spears Circus Tour.`,
+      `Her history is detailed in her memoir Everything Is Possible: Finding the Faith and Courage to Follow Your Dreams, which was a New York Times bestseller. `,
+      `https://brightside.me/wonder-people/10-people-who-made-their-childhood-dreams-come-true`,
+    ],
+    exp: '',
+    questions: [
+      //multiple choice
+      {
+        type: 'multipleChoice',
+        list: [
+          {
+            question: '• 	The type of document is: ',
+            answers: [
+              '1- an email',
+              '2-	a website article',
+              '3- a newspaper article',
+            ],
+            correctAnswer: '2-	a website article',
+          },
+          {
+            question: '•	The title is: ',
+            answers: [
+              '1.	Jennifer Bricker',
+              '2- My life',
+              '3-	Dominique Moceanu',
+            ],
+            correctAnswer: '1.	Jennifer Bricker',
+          },
+        ],
+      },
+
+      // true false
+      {
+        type: 'trueFalse',
+        list: [
+          {
+            question: '1.	Jennifer was born without arms',
+            answers: [
+              { id: 'a1-1', text: 'True' },
+              { id: 'a1-2', text: 'True' },
+            ],
+            correctAnswer: 'False',
+          },
+          {
+            question: '2.	Her real parents were very supportive. ',
+            answers: [
+              { id: 'a2-1', text: 'True' },
+              { id: 'a2-2', text: 'True' },
+            ],
+            correctAnswer: 'False',
+          },
+          {
+            question: '3.	She practises Gymnastics.',
+            answers: [
+              { id: 'a3-1', text: 'True' },
+              { id: 'a3-2', text: 'True' },
+            ],
+            correctAnswer: 'True',
+          },
+          {
+            question: '4.	her sister is her idol.',
+            answers: [
+              { id: 'a4-1', text: 'True' },
+              { id: 'a4-2', text: 'True' },
+            ],
+            correctAnswer: 'True',
+          },
+        ],
+      },
+
+      //re-ordering
+      {
+        type: 'reOrdering',
+        question:
+          'Reorder the following ideas based on the their occurrence on the text',
+        answers: [
+          '1- Jennifer discovered that her idol is her actual sister.',
+          '2- she won the Power Tumbling Championship in Illinois',
+          '3- Jennifer was adopted.',
+          '4- Jennifer reunited with her biological parents. ',
+        ],
+        correctAnswer: ['3', '2', '1', '4'],
+      },
+    ],
+  },
+
+  //eleven
+  {
+    id: 11,
+    title: 'Sequence 02: My Dream ',
+    cat: 'reading',
+    audioUrl: 'audioReading_11',
+    videoUrl: '',
+    test: 'r-t-11',
+    hint: '',
+    text: [
+      `Ever since I can remember I’ve always wanted to be a doctor. My neighbours and I used to play doctors and nurses in my room till all of our teddies were cured and no more complaints were heard. Broken arm? No problem. I’ll give you an injection for the pain. Flu? Here’s some antibiotic and cough syrup. And so on…. My parents were proud and encouraged me to pursue a career as a doctor. `,
+      `Of course, to be a doctor was not as easy as it seemed. At school, I was considered as a straight-A-swot. While other kids were playing or going to parties, I was either studying or sleeping so I could get up early in the morning to go to school. I was that careful. I remember studying till midnight. `,
+      `When I was in my third year of university, I decided to volunteer at a local hospital as a male assistant (nurse). I heard people’s life stories and tried to relieve some of the pain away. `,
+      `Now, I’m a doctor. I’ve never given up listening to my patients. People badly want someone to listen and share their burden. I’ve been doing that since my teddy bear childhood. `,
+      `Mathew Lanel.`,
+      `Adapted from www.ISL Collective .com`,
+    ],
+    exp: '',
+    questions: [
+      //multiple choice
+      {
+        type: 'multipleChoice',
+        list: [
+          {
+            question: '• 	The text is written by: ',
+            answers: ['1- Anonymous writer', '2-	Mathew Lanel'],
+            correctAnswer: '2-	Mathew Lanel',
+          },
+          {
+            question: '•	How many paragraphs in the text? ',
+            answers: [
+              '1.	two paragraphs',
+              '2- three paragraphs',
+              '3-	four paragraphs',
+            ],
+            correctAnswer: '3-	four paragraphs',
+          },
+          {
+            question: '•	what’s the text about?',
+            answers: [
+              '1.	Mathew’s first day at primary school',
+              '2-	Mathews dream of being a doctor',
+              '3-	Difficulties of being a doctor',
+            ],
+            correctAnswer: '3-	Difficulties of being a doctor',
+          },
+        ],
+      },
+
+      // true false
+      {
+        type: 'trueFalse',
+        list: [
+          {
+            question:
+              '1.	Mathew did not want to be a doctor when he was a child. ',
+            answers: [
+              { id: 'a1-1', text: 'True' },
+              { id: 'a1-2', text: 'True' },
+            ],
+            correctAnswer: 'False',
+          },
+          {
+            question: '2.	He volunteered as a male assistant at a hospital.  ',
+            answers: [
+              { id: 'a2-1', text: 'True' },
+              { id: 'a2-2', text: 'True' },
+            ],
+            correctAnswer: 'True',
+          },
+          {
+            question: '3.	He listens well to his patients. ',
+            answers: [
+              { id: 'a3-1', text: 'True' },
+              { id: 'a3-2', text: 'True' },
+            ],
+            correctAnswer: 'True',
+          },
+        ],
+      },
+
+      //filling the gaps
+      {
+        type: 'fillingGaps',
+        question:
+          ' Read the text again and fill in the gaps with “1. The swot/ 2. The volunteer/ 3. The doctor”',
+        answers: [
+          ' .	 ----- / is a person who works in an origination without being paid \n.  ------ / is a person who is qualified to treat sick people. ----- / \n.	----- is a person who studies a lot. ',
+        ],
+        correctAnswer: ['2', '3', '1'],
+      },
+    ],
+  },
+
+  //twelve
+  {
+    id: 12,
+    title: 'Sequence 03: good citizen ',
+    cat: 'reading',
+    audioUrl: 'audioReading_12',
+    videoUrl: '',
+    test: 'r-t-12',
+    hint: '',
+    text: [
+      `Well, it’s not easy to answer this question, but let’s agree that if you want to be a good citizen, you have to be a good person first. A good person who is aware of his duties and responsibilities towards his family, his friends, his neighbors and his community in general. A good citizen knows his rights, too, but his rights should never violate the rights of others. Respecting other people’s opinion, beliefs, religion, the way they dress, the way they think is an important part of being a good citizen. `,
+
+      `In addition, everybody knows that the main point of being a good citizen is giving helping hand to homeless and poor people. We should help everyone no matter what color, race or religion they have. The best way to help them is to donate food and money so that they don’t go hungry. There are many charities and organizations that help the needy people but every one of us should volunteer to give them a better life.`,
+      `I, also strongly believe that a good citizen respect and obey the rules and the laws. Laws are set up to regulate people’s behavior and to protect our general safety and to ensure our rights as citizens against abuses by the others. `,
+      `to sum up, I agree that citizenship is a huge responsibility and a burden on the shoulder of every faithful and selfless citizen in his country. `,
+    ],
+    exp: '',
+    questions: [
+      //multiple choice
+      {
+        type: 'multipleChoice',
+        list: [
+          {
+            question: '• 	The text is about: ',
+            answers: ['1- poor people', '2-	citizenship', '3-	cooperative work'],
+            correctAnswer: '2-	citizenship',
+          },
+          {
+            question: '•	the text is: ',
+            answers: ['1.	argumentative', '2- descriptive', '3-	expository'],
+            correctAnswer: '1.	argumentative',
+          },
+          {
+            question: '•	3.	A good citizen knows:',
+            answers: [
+              '1.	his duties or rights ',
+              '2-	neither his duties nor his rights',
+              '3-	his rights and dutie',
+            ],
+            correctAnswer: '3-	his rights and dutie',
+          },
+        ],
+      },
+
+      // true false
+      {
+        type: 'trueFalse',
+        list: [
+          {
+            question:
+              '1. A good citizen is a person who cares only about his family.',
+            answers: [
+              { id: 'a1-1', text: 'True' },
+              { id: 'a1-2', text: 'True' },
+            ],
+            correctAnswer: 'False',
+          },
+          {
+            question: '2.	A good citizen has principles, morals and ethics',
+            answers: [
+              { id: 'a2-1', text: 'True' },
+              { id: 'a2-2', text: 'True' },
+            ],
+            correctAnswer: 'True',
+          },
+          {
+            question:
+              '3.	we should help only needy people who share with us the same ideas, beliefs and religion.',
+            answers: [
+              { id: 'a3-1', text: 'True' },
+              { id: 'a3-2', text: 'True' },
+            ],
+            correctAnswer: 'False',
+          },
+          {
+            question:
+              '4.	A respectful citizen should break and disobey the rules and the laws.',
+            answers: [
+              { id: 'a4-1', text: 'True' },
+              { id: 'a4-2', text: 'True' },
+            ],
+            correctAnswer: 'False',
+          },
+        ],
+      },
+
+      // true false
+      {
+        type: 'trueFalse',
+        list: [
+          {
+            question:
+              '1.	 Does the development of nations depend on the behavior of its people?',
+            answers: ['Yes', 'No'],
+            correctAnswer: 'Yes',
+          },
+          {
+            question: '2.	is it acceptable to violate the rights of others? ',
+            answers: ['Yes.', 'No.'],
+            correctAnswer: 'No.',
+          },
+        ],
+      },
+
+      //matching
+      {
+        type: 'matching',
+        question:
+          'read the text again and match each word with its definition ',
+        answers: {
+          g1: ['1-	1.	needy ', '2- volunteer ', '3- charity', '4-	donate'],
+          g2: [
+            'a- To give money or goods to help a person or organization.',
+            'b- A person who offers help without getting help.',
+            'c- someone who is poor, or someone who demands a lot of care and attention.',
+            'd- Generosity and helpfulness especially toward the needy or suffering people.',
+          ],
+        },
+
+        correctAnswer: ['1-c', '2-b', '3-d', '4-a'],
+      },
+    ],
+  },
+
+  //therteen
+  {
+    id: 13,
+    title: 'Sequence 02: My Primary School 01',
+    cat: 'reading',
+    audioUrl: 'audioReading_13',
+    videoUrl: '',
+    test: 'r-t-13',
+    hint: 'Pre Reading: What do you think the text is about?',
+    text: [
+      `November 22,2011 by George Couros`,
+
+      `Yesterday, I received a notification on Facebook that my old elementary school was soon to be demolished. I decided to write some of my memories about it. Leaving school almost 23 years ago, I was amazed how much my time at the school has influenced what I am doing today.`,
+
+      `One of my first memories as a child was ….`,
+    ],
+    exp: '',
+    questions: [
+      // true false
+      {
+        type: 'trueFalse',
+        list: [
+          {
+            question: '1. the school is going to be destroyed. ',
+            answers: [
+              { id: 'a1-1', text: 'True' },
+              { id: 'a1-2', text: 'True' },
+            ],
+            correctAnswer: 'True',
+          },
+          {
+            question: '2.	He is still a primary school pupil.',
+            answers: [
+              { id: 'a2-1', text: 'True' },
+              { id: 'a2-2', text: 'True' },
+            ],
+            correctAnswer: 'False',
+          },
+          {
+            question:
+              '3.	He is going to write some memories at the primary school',
+            answers: [
+              { id: 'a3-1', text: 'True' },
+              { id: 'a3-2', text: 'True' },
+            ],
+            correctAnswer: 'True',
+          },
+        ],
+      },
+
+      //multiple choice
+      {
+        type: 'multipleChoice',
+        list: [
+          {
+            question:
+              '• 	What do you think the first memory he is going to write about? then explain why',
+            answers: [
+              '1- His remarkable success in the final exam.',
+              '2-	his first day at the school.',
+            ],
+            correctAnswer: '2-	his first day at the school.',
+          },
+          {
+            question:
+              '•	Which of the following hints you can rely on to predict?',
+            answers: [
+              '1.	the logical chronological order of the events.',
+              '2- Haphazardly',
+            ],
+            correctAnswer: '1.	the logical chronological order of the events.',
+          },
+          {
+            question: '•	who do you think he is going to go with to the school?',
+            answers: [
+              '1.	alone',
+              '2-	with his mother / father',
+              '3-	with his friends.',
+            ],
+            correctAnswer: '2-	with his mother / father',
+          },
+          {
+            question:
+              '•	why do you think that his father/ mother took him to the school?',
+            answers: [
+              '1.	because it is obligatory',
+              '2-	Because my parents took me to the school on the first day.',
+            ],
+            correctAnswer:
+              '2-	Because my parents took me to the school on the first day.',
+          },
+        ],
+      },
+    ],
+  },
+
+  //foorteen
+  {
+    id: 14,
+    title: 'Sequence 02: MY PRIMARY SCHOOL PART 02',
+    cat: 'reading',
+    audioUrl: 'audioReading_14',
+    videoUrl: '',
+    test: 'r-t-14',
+    hint: '',
+    text: [
+      `My mom walking me to school for the first day. I still can visualize the jacket I was wearing and I still remember how much excited I felt. I kept talking nonstop all the way to the school.`,
+
+      `I remember playing football in the school playground. we used to rush out and I remember my brother Alec always telling me how much I stunk from the sweat. I didn’t care because I could have played all day.`,
+
+      `In the 3 rd grade , ….`,
+    ],
+    exp: '',
+    questions: [
+      // true false
+      {
+        type: 'trueFalse',
+        list: [
+          {
+            question: '1. he went to the school with his father. false',
+            answers: [
+              { id: 'a1-1', text: 'True' },
+              { id: 'a1-2', text: 'True' },
+            ],
+            correctAnswer: 'False',
+          },
+          {
+            question: '2.	he was afraid to go to the school',
+            answers: [
+              { id: 'a2-1', text: 'True' },
+              { id: 'a2-2', text: 'True' },
+            ],
+            correctAnswer: 'False',
+          },
+        ],
+      },
+
+      //multiple choice
+      {
+        type: 'multipleChoice',
+        list: [
+          {
+            question: '• 	what do you expect he is going to talk about next?',
+            answers: ['1- his ideal friend', '2-	his ideal teacher.'],
+            correctAnswer: '2-	his ideal teacher.',
+          },
+          {
+            question: '•	why does he consider him as an idol?',
+            answers: [
+              '1.	he was inspiring and supportive',
+              '2- he was careless and lazy.',
+              '2- He was strong.',
+            ],
+            correctAnswer: '1.	he was inspiring and supportive',
+          },
+        ],
+      },
+    ],
+  },
+
+  //feefteen
+  {
+    id: 15,
+    title: 'Sequence 02: MY PRIMARY SCHOOL PART 03',
+    cat: 'reading',
+    audioUrl: 'audioReading_15',
+    videoUrl: '',
+    test: 'r-t-15',
+    hint: '',
+    text: [
+      `In the 3 rd grade, my teacher Mrs Penrose inspired a love of music that I still have. she wrote on my report card : « Follow your dreams as you have the talent to
+      take you anywhere you want to go. » Mr. Moshinski isprobably one of the most influential teachers I have ever had. He was always hard on us, but it was done
+      out of pure love. He used to sit and have some of the best conversations with us. They always meant so much to me.`,
+
+      `Amazing that I can remember that much about elementary school. Hopefully my students will remember me as fondly. What I realize writing this is that it is never a building that is important, but people that make it feel like home.`,
+
+      `Adapted from :https://georgecours.ca/blog`,
+    ],
+    exp: '',
+    questions: [
+      //multiple choice
+      {
+        type: 'multipleChoice',
+        list: [
+          {
+            question: '• 	What is the lesson George has learned?',
+            answers: [
+              '1- that the place is the most important thing.',
+              '2-	that the people that makes a place important.',
+            ],
+            correctAnswer: '2-	that the people that makes a place important.',
+          },
+          {
+            question:
+              '•	Which one of the following paragraphs that best summarizes the text?',
+            answers: [
+              '1. George has realized that his primary school is going to be destroyed. Accordingly, he write his memories.',
+              '2- George went to the school with his mother. He met a lot of friends and studied different school subject',
+              '3- George decided to write some of his school memories after knowing that it is going to be destroyed. He talked about the first day at his primary school and his ideal teacher Mr. Moshinski. He also wishes that he would be as much good to his students as Mr. Moshinski.',
+            ],
+            correctAnswer:
+              '3- George decided to write some of his school memories after knowing that it is going to be destroyed. He talked about the first day at his primary school and his ideal teacher Mr. Moshinski. He also wishes that he would be as much good to his students as Mr. Moshinski.',
+          },
+        ],
+      },
+    ],
+  },
+
+  //sexteen
+  {
+    id: 16,
+    title: 'My best friend',
+    cat: 'reading',
+    audioUrl: 'audioReading_16',
+    videoUrl: '',
+    test: 'r-t-16',
+    hint: '',
+    text: [
+      `Hello,`,
+      `my name is Sami. I am very happy to tell you about my best friend. His name is Karim. He is15 years old. He is quite tall and slim. He has short hair and brown eyes.`,
+
+      `He is cheerful and funny. He always tells jokes when we are together. He is also friendly and likes meeting new people. He is very helpful and unselfish. He
+      always tries to help people who have problems. He is smart and hardworking. He  homework and is at the top of my class. Whenever we work together, I get good marks.`,
+
+      `In his free time, he enjoys reading books. He always says that the more we read the more we learn. He likes playing football and basketball. He loves swimming too. We always go to the beach together.`,
+      `In the future, Karim wants to be a good doctor. I am really happy to have such a friend.`,
+      `What about you ? Can you tell me about your best friend ?`,
+      `Best Regards, `,
+      `Sami`,
+    ],
+    exp: '',
+    questions: [
+      //multiple choice
+      {
+        type: 'multipleChoice',
+        list: [
+          {
+            question: '• 	In the text there are:',
+            answers: [
+              '1- three paragraphs',
+              '2- four paragraphs',
+              '3- five paragraphs',
+            ],
+            correctAnswer: '2- four paragraphs',
+          },
+          {
+            question: '• 	The text is:',
+            answers: ['1- an article', '2- an email', '3- an interview'],
+            correctAnswer: '2- an email',
+          },
+          {
+            question:
+              '• 	Read the following part and choose which paragraph it can be attached to: “When Cancer and was about to die. He suffered a lot and that what has made him to decide to be a skilful doctor. He wants to help sick people and to bring back the smile to their lives.”',
+            answers: [
+              '1- paragraph 01',
+              '2- paragraph 02',
+              '3- paragraph 03',
+              '4- paragraph 04',
+            ],
+            correctAnswer: '4- paragraph 04',
+          },
+        ],
+      },
+    ],
+  },
+
+  //seventeen
+  {
+    id: 17,
+    title: 'shy girl',
+    cat: 'reading',
+    audioUrl: 'audioReading_17',
+    videoUrl: '',
+    test: 'r-t-17',
+    hint: '',
+    text: [
+      `Hello,`,
+      `My name is Paola. When I was a child I was a very shy girl. My family and I lived in a small village in Oaxaca, Mexico.`,
+
+      `I remember my best friend at elementary school, Manuela. When we met she was eight years old and I was nine. She was a beautiful girl. She was tall and plumb with long wavy hair and big hazel eyes. We were in the same class at school. We sat together and always played in the break, we call it recreo here in Mexico. Her family was very nice and they lived near my house, so we spent a lot of time together.`,
+
+      `watched cartoons on TV , we played games, and did our homework together. In summer we were together too, we went swimming in the river when the weather was hot, we played with our toys, and played video games a lot – our favorite game was Mario Bros.`,
+      `I remember the day when she broke her leg , that day we were running and jumping in the hill. I remember also the day while she was sleeping on the soil and I was digging a hole, and suddenly a big black dog appeared and we started shouting and crying. I will never forget the time we spent together.`,
+      `I will never forget how careful, helpful , joyful and bountiful she was.`,
+      `What about you ? Can you tell me about your childhood memories ?`,
+      `Sincerely ,`,
+      `Pola`,
+      `Adapted from ISL.COLLECTIVE.COM`,
+    ],
+    exp: '',
+    questions: [
+      // true false
+      {
+        type: 'trueFalse',
+        list: [
+          {
+            question: '1.	the text is an email.',
+            answers: [
+              { id: 'a1-1', text: 'True' },
+              { id: 'a1-2', text: 'True' },
+            ],
+            correctAnswer: 'True',
+          },
+        ],
+      },
+
+      //matching
+      {
+        type: 'matching',
+        question:
+          'read the text again and match each word with its definition ',
+        answers: {
+          g1: [
+            '1- salutation',
+            '2- introduction',
+            '3- body',
+            '4-	conclusion',
+            '4-	closure',
+          ],
+          g2: [
+            'a- hello',
+            'b- Sincerely',
+            'c- My name is …',
+            'd- I will never forget …',
+            'd- I remember my best friend…',
+          ],
+        },
+
+        correctAnswer: ['1-a', '2-c', '3-e', '4-d', '5-b'],
+      },
+
+      //re-ordering
+      {
+        type: 'reOrdering',
+        question:
+          'Reorder the following ideas based on the their occurrence on the text',
+        answers: [
+          '1- Manuela is a helpful person',
+          '2- Manuela had long wavy hair and big hazel eyes.',
+          '3- Manuella and Poala used to swim in the river.',
+          '4- they used to watch cartoons.',
+        ],
+        correctAnswer: ['2', '3', '4', '1'],
+      },
+    ],
+  },
+
+  //eighteen
+  {
+    id: 18,
+    title: 'My ...',
+    cat: 'reading',
+    audioUrl: 'audioReading_18',
+    videoUrl: '',
+    test: 'r-t-18',
+    hint: '',
+    text: [
+      `November 22,2011 by George Couros`,
+      `Yesterday, I received a notification in Facebook that my old elementary school was soon to be demolished. I decided to write some of my memories about it. almost 23 years ago, I was amazed how much my time at the school has influenced what I am doing today.`,
+      `One of my first memories as a child was my mom walking me to school for the first day. I still can visualize the jacket I was wearing. I remember playing football the fields with James, Antoine and John. we used to rush out and I remember my brother Alec always telling me how much I stunk from the sweat. I didn’t care because I could have played all day.`,
+      `In grade 3, my teacher Mrs Penrose inspired a love of music that I still have. she wrote on my report card : «Follow your dreams as you have the talent to take you anywhere you want to go. »Mr. Moshinski is probably one of the most influential teachers I have ever had.He was always hard on us, but it was done out of pure love. He used to sit and have some of the best conversations with us. They always meant so much to me.`,
+      `Amazing that I can remember that much about elementary school. Hopefully my students will remember me as fondly. What I realize writing this is that it is never a building that is important, but people that make it feel like home.`,
+      `Adapted from: https://georgecours.ca/blog`,
+    ],
+    exp: '',
+    questions: [
+      //multiple choice
+      {
+        type: 'multipleChoice',
+        list: [
+          {
+            question: '•	what is the type of the document:',
+            answers: [
+              '1- an email',
+              '2- a blog article',
+              '3- a newspaper article',
+            ],
+            correctAnswer: '2- a blog article',
+          },
+          {
+            question: '•	what is the title:',
+            answers: [
+              '1- My school Memories',
+              '2- My Childhood memories',
+              '3- My Demolished school',
+            ],
+            correctAnswer: '1- My school Memories',
+          },
+          {
+            question: '•	How many paragraphs in the text?',
+            answers: ['1- 2 paragraphs', '2- 3 paragraphs ', '3- 4 paragraphs'],
+            correctAnswer: '3- 4 paragraphs',
+          },
+          {
+            question: '•	what is the date of publication:',
+            answers: [
+              '1- the second of November 2011',
+              '2- the twenty second of November 2011',
+              '3- the twelfth of November 2011',
+            ],
+            correctAnswer: '2- the twenty second of November 2011',
+          },
+          {
+            question: '•	who is the author?',
+            answers: ['1- George', '2- Alec', '3- James'],
+            correctAnswer: '1- George',
+          },
+        ],
+      },
+
+      //multiple choice
+      {
+        type: 'multipleChoice',
+        list: [
+          {
+            question:
+              '•	Which paragraph that misses this part? “ I was very excited and curious at the same time. I kept talking non-stop all the way to the school and my mother was very calm answering me each now and then.”',
+            answers: [
+              '1- paragraph 01',
+              '2- paragraph 02',
+              '3- paragraph 03',
+              '4- paragraph 04',
+            ],
+            correctAnswer: '2- paragraph 02',
+          },
+        ],
+      },
+
+      //re-ordering
+      {
+        type: 'reOrdering',
+        question:
+          'Reorder the following ideas based on the their occurrence on the text',
+        answers: [
+          '1- The first day at primary school.',
+          '2- hoping that his students will remember him',
+          '3- realizing that the primary school is going to be demolished',
+          '4- talking about his ideal teacher.',
+          '5- playing with his friends.',
+        ],
+        correctAnswer: ['3', '1', '5', '4', '2'],
       },
     ],
   },
