@@ -134,9 +134,9 @@ const Lesson = () => {
       );
   };
 
-  const handelClickedAnswer = (clickedQuestion) => {
+  const handelClickedAnswer = (clickedQuestion, answer) => {
     console.log(clickedAnswer);
-    setClickedAnswer({ ...clickedAnswer, [clickedQuestion]: clickedQuestion });
+    setClickedAnswer({ ...clickedAnswer, [clickedQuestion]: answer });
   };
 
   return (
@@ -224,19 +224,20 @@ const Lesson = () => {
                                   <div
                                     key={i}
                                     className={`answer ${
-                                      clickedAnswer.a?.id && 'clicked'
+                                      clickedAnswer[q.question] === a &&
+                                      'clicked'
                                     }`}
                                     onClick={() => {
                                       handelScore(
-                                        a.text,
+                                        a,
                                         q.correctAnswer,
                                         'trueFalse',
                                         ques.list.length
                                       );
-                                      handelClickedAnswer(a.id);
+                                      handelClickedAnswer(q.question, a);
                                     }}
                                   >
-                                    {a.text}
+                                    {a}
                                   </div>
                                 ))}
                               </div>
@@ -266,7 +267,8 @@ const Lesson = () => {
                                   <div
                                     key={i}
                                     className={`answer ${
-                                      clickedAnswer.a && 'clicked'
+                                      clickedAnswer[q.question] === a &&
+                                      'clicked'
                                     }`}
                                     onClick={() => {
                                       handelScore(
@@ -275,7 +277,7 @@ const Lesson = () => {
                                         'multipleChoice',
                                         ques.list.length
                                       );
-                                      handelClickedAnswer(a);
+                                      handelClickedAnswer(q.question, a);
                                     }}
                                   >
                                     {a}
@@ -488,7 +490,13 @@ const Lesson = () => {
               )}
               {/* result */}(
               <div className="resultContainer">
-                <button className="check" onClick={() => setOpenModal(true)}>
+                <button
+                  className="check"
+                  onClick={() => {
+                    setOpenModal(true);
+                    setClickedAnswer({});
+                  }}
+                >
                   Result
                 </button>
 

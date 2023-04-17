@@ -20,36 +20,24 @@ export const reading = [
         list: [
           {
             question: '1.	They had a one weak trip. ',
-            answers: [
-              { id: 'a1-1', text: 'True' },
-              { id: 'a1-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'True',
           },
           {
             question: '2.	They didn’t take any luggage with them. ',
-            answers: [
-              { id: 'a2-1', text: 'True' },
-              { id: 'a2-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'False',
           },
           {
             question:
               '3.	They visited Makam Chahid and El Hamma Garden and the National Museum.',
-            answers: [
-              { id: 'a3-1', text: 'True' },
-              { id: 'a3-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'True',
           },
           {
             question:
               '4.	The pupils were allowed to take pictures in the museum. ',
-            answers: [
-              { id: 'a4-1', text: 'True' },
-              { id: 'a4-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'False',
           },
         ],
@@ -181,34 +169,22 @@ export const reading = [
           {
             question:
               '1. Zohra Dhrif realised that she can never be equal to the French girls after the reaction of her friend Rosalyne',
-            answers: [
-              { id: 'a1-1', text: 'True' },
-              { id: 'a1-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'True',
           },
           {
             question: '2. Zohra Dhrif didn’t study at a French School. ',
-            answers: [
-              { id: 'a2-1', text: 'True' },
-              { id: 'a2-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'False',
           },
           {
             question: '3. Zohra Dhrif used to eat croissant  at breakfast.  ',
-            answers: [
-              { id: 'a3-1', text: 'True' },
-              { id: 'a3-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'False',
           },
           {
             question: '4.	Zohra Dhrif didn’t fail at her 6th grade exam',
-            answers: [
-              { id: 'a4-1', text: 'True' },
-              { id: 'a4-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'True',
           },
         ],
@@ -287,18 +263,12 @@ export const reading = [
         list: [
           {
             question: '1.	Ceyanne was attacked by a dog.',
-            answers: [
-              { id: 'a1-1', text: 'True' },
-              { id: 'a1-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'True',
           },
           {
             question: '2.	All Ceyann’s scars were healed. ',
-            answers: [
-              { id: 'a2-1', text: 'True' },
-              { id: 'a2-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'False',
           },
         ],
@@ -355,18 +325,12 @@ export const reading = [
         list: [
           {
             question: '1. Ceyanne got bullied at the primary school ',
-            answers: [
-              { id: 'a1-1', text: 'True' },
-              { id: 'a1-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'True',
           },
           {
             question: '2. She was bullied for 5 years',
-            answers: [
-              { id: 'a2-1', text: 'True' },
-              { id: 'a2-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'True',
           },
         ],
@@ -378,18 +342,12 @@ export const reading = [
         list: [
           {
             question: '1. She asked for help during primary school.',
-            answers: [
-              { id: 'a3-1', text: 'True' },
-              { id: 'a3-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'False',
           },
           {
             question: '2. She has started feeling better after primary school.',
-            answers: [
-              { id: 'a4-1', text: 'True' },
-              { id: 'a4-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'False',
           },
         ],
@@ -446,26 +404,17 @@ export const reading = [
         list: [
           {
             question: '1.	Ceyanne started comparing herself to others.',
-            answers: [
-              { id: 'a1-1', text: 'True' },
-              { id: 'a1-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'True',
           },
           {
             question: '2. Her classmates words made her strong.',
-            answers: [
-              { id: 'a2-1', text: 'True' },
-              { id: 'a2-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'False',
           },
           {
             question: '3. Ceyanne’s father helped her to feel better.',
-            answers: [
-              { id: 'a3-1', text: 'True' },
-              { id: 'a3-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'True',
           },
         ],
@@ -531,34 +480,22 @@ export const reading = [
         list: [
           {
             question: '1.	The author’s school has influenced his personality.',
-            answers: [
-              { id: 'a1-1', text: 'True' },
-              { id: 'a1-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'True',
           },
           {
             question: '2. He has become unkind',
-            answers: [
-              { id: 'a2-1', text: 'True' },
-              { id: 'a2-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'False',
           },
           {
             question: '3. Mr Talbi taught him science. ',
-            answers: [
-              { id: 'a3-1', text: 'True' },
-              { id: 'a3-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'False',
           },
           {
             question: '4. Mr Talbi is the author’s idol.',
-            answers: [
-              { id: 'a4-1', text: 'True' },
-              { id: 'a4-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'True',
           },
         ],
@@ -599,34 +536,22 @@ export const reading = [
         list: [
           {
             question: '1.	the author went to the school with his mother. .',
-            answers: [
-              { id: 'a1-1', text: 'True' },
-              { id: 'a1-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'False',
           },
           {
             question: '2. the children were his friends',
-            answers: [
-              { id: 'a2-1', text: 'True' },
-              { id: 'a2-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'False',
           },
           {
             question: '3. the teacher was unfriendly. ',
-            answers: [
-              { id: 'a3-1', text: 'True' },
-              { id: 'a3-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'False',
           },
           {
             question: '4.	The author had a good childhood.  ',
-            answers: [
-              { id: 'a4-1', text: 'True' },
-              { id: 'a4-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'True',
           },
         ],
@@ -781,27 +706,18 @@ export const reading = [
         list: [
           {
             question: '1.	Paul is the sender of the email',
-            answers: [
-              { id: 'a1-1', text: 'True' },
-              { id: 'a1-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'True',
           },
           {
             question: '2.	The author’s teachers are unsupportive.',
-            answers: [
-              { id: 'a2-1', text: 'True' },
-              { id: 'a2-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'False',
           },
           {
             question:
               '3.	It is easy to choose a career before finishing high school.',
-            answers: [
-              { id: 'a3-1', text: 'True' },
-              { id: 'a3-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'False',
           },
         ],
@@ -864,26 +780,17 @@ export const reading = [
           {
             question:
               '1.	Belkacem Haba was a punctual, decent and ambitious kid',
-            answers: [
-              { id: 'a1-1', text: 'True' },
-              { id: 'a1-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'True',
           },
           {
             question: '2.	He did not give up his dream.',
-            answers: [
-              { id: 'a2-1', text: 'True' },
-              { id: 'a2-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'True',
           },
           {
             question: '3.	He lived in a wealthy neighbourhood.  ',
-            answers: [
-              { id: 'a3-1', text: 'True' },
-              { id: 'a3-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'False',
           },
         ],
@@ -950,34 +857,22 @@ export const reading = [
         list: [
           {
             question: '1.	Jennifer was born without arms',
-            answers: [
-              { id: 'a1-1', text: 'True' },
-              { id: 'a1-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'False',
           },
           {
             question: '2.	Her real parents were very supportive. ',
-            answers: [
-              { id: 'a2-1', text: 'True' },
-              { id: 'a2-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'False',
           },
           {
             question: '3.	She practises Gymnastics.',
-            answers: [
-              { id: 'a3-1', text: 'True' },
-              { id: 'a3-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'True',
           },
           {
             question: '4.	her sister is her idol.',
-            answers: [
-              { id: 'a4-1', text: 'True' },
-              { id: 'a4-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'True',
           },
         ],
@@ -1055,26 +950,17 @@ export const reading = [
           {
             question:
               '1.	Mathew did not want to be a doctor when he was a child. ',
-            answers: [
-              { id: 'a1-1', text: 'True' },
-              { id: 'a1-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'False',
           },
           {
             question: '2.	He volunteered as a male assistant at a hospital.  ',
-            answers: [
-              { id: 'a2-1', text: 'True' },
-              { id: 'a2-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'True',
           },
           {
             question: '3.	He listens well to his patients. ',
-            answers: [
-              { id: 'a3-1', text: 'True' },
-              { id: 'a3-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'True',
           },
         ],
@@ -1144,36 +1030,24 @@ export const reading = [
           {
             question:
               '1. A good citizen is a person who cares only about his family.',
-            answers: [
-              { id: 'a1-1', text: 'True' },
-              { id: 'a1-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'False',
           },
           {
             question: '2.	A good citizen has principles, morals and ethics',
-            answers: [
-              { id: 'a2-1', text: 'True' },
-              { id: 'a2-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'True',
           },
           {
             question:
               '3.	we should help only needy people who share with us the same ideas, beliefs and religion.',
-            answers: [
-              { id: 'a3-1', text: 'True' },
-              { id: 'a3-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'False',
           },
           {
             question:
               '4.	A respectful citizen should break and disobey the rules and the laws.',
-            answers: [
-              { id: 'a4-1', text: 'True' },
-              { id: 'a4-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'False',
           },
         ],
@@ -1241,27 +1115,18 @@ export const reading = [
         list: [
           {
             question: '1. the school is going to be destroyed. ',
-            answers: [
-              { id: 'a1-1', text: 'True' },
-              { id: 'a1-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'True',
           },
           {
             question: '2.	He is still a primary school pupil.',
-            answers: [
-              { id: 'a2-1', text: 'True' },
-              { id: 'a2-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'False',
           },
           {
             question:
               '3.	He is going to write some memories at the primary school',
-            answers: [
-              { id: 'a3-1', text: 'True' },
-              { id: 'a3-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'True',
           },
         ],
@@ -1337,18 +1202,12 @@ export const reading = [
         list: [
           {
             question: '1. he went to the school with his father. false',
-            answers: [
-              { id: 'a1-1', text: 'True' },
-              { id: 'a1-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'False',
           },
           {
             question: '2.	he was afraid to go to the school',
-            answers: [
-              { id: 'a2-1', text: 'True' },
-              { id: 'a2-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'False',
           },
         ],
@@ -1514,10 +1373,7 @@ export const reading = [
         list: [
           {
             question: '1.	the text is an email.',
-            answers: [
-              { id: 'a1-1', text: 'True' },
-              { id: 'a1-2', text: 'True' },
-            ],
+            answers: ['True', 'False'],
             correctAnswer: 'True',
           },
         ],
