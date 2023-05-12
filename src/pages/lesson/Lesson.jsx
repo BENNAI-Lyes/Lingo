@@ -456,39 +456,40 @@ const Lesson = () => {
                 })}
               </div>
               {/* //writing */}
-              {currentLesson.cat === 'writing' && (
-                <div className="email">
-                  <form ref={form} onSubmit={sendEmail}>
-                    <h2>Your Text:</h2>
-                    <div className="info">
-                      <input
-                        type="text"
-                        name="from_name"
-                        placeholder="Your Name ..."
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
-                      />
-                      <input
-                        type="email"
-                        name="from_email"
-                        placeholder="Your Email ..."
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                      />
-                    </div>
-                    <textarea
-                      name="text"
-                      cols="30"
-                      rows="10"
-                      placeholder="send text to email teacher here ..."
-                      value={text}
-                      onChange={(e) => setText(e.target.value)}
-                    ></textarea>
-                    <button>send</button>
-                  </form>
-                </div>
-              )}
-              {/* result */}(
+              {currentLesson.cat === 'writing' ||
+                (currentLesson.cat === 'reading' && (
+                  <div className="email">
+                    <form ref={form} onSubmit={sendEmail}>
+                      <h2>Your Text:</h2>
+                      <div className="info">
+                        <input
+                          type="text"
+                          name="from_name"
+                          placeholder="Your Name ..."
+                          value={name}
+                          onChange={(e) => setName(e.target.value)}
+                        />
+                        <input
+                          type="email"
+                          name="from_email"
+                          placeholder="Your Email ..."
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)}
+                        />
+                      </div>
+                      <textarea
+                        name="text"
+                        cols="30"
+                        rows="10"
+                        placeholder="send text to email teacher here ..."
+                        value={text}
+                        onChange={(e) => setText(e.target.value)}
+                      ></textarea>
+                      <button>send</button>
+                    </form>
+                  </div>
+                ))}
+              {/* result */}
               <div className="resultContainer">
                 <button
                   className="check"
@@ -541,7 +542,6 @@ const Lesson = () => {
                   </div>
                 )}
               </div>
-              )
             </div>
           )}
         </div>
