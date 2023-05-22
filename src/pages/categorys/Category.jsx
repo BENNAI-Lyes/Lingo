@@ -17,8 +17,7 @@ const Category = () => {
             <div className="left">
               <h2>Reading</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. amet
-                consectetur adipisicing eli{' '}
+              Reading is to the mind what exercise is to the body.
               </p>
               <Link to="/reading">
                 <button>Learn</button>
@@ -34,8 +33,7 @@ const Category = () => {
             <div className="left">
               <h2>Writing</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. amet
-                consectetur adipisicing eli{' '}
+              Either write something worth reading or do something worth writing.
               </p>
               <Link to="/writing">
                 <button>Learn</button>
@@ -51,8 +49,7 @@ const Category = () => {
             <div className="left">
               <h2>Grammar</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. amet
-                consectetur adipisicing eli{' '}
+              Grammar is the Language’s 
               </p>
               <Link to="/grammar">
                 <button>Learn</button>
@@ -68,8 +65,7 @@ const Category = () => {
             <div className="left">
               <h2>Listening</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. amet
-                consectetur adipisicing eli{' '}
+              There is a difference between listening and waiting for your turn to speak.
               </p>
               <Link to="/listening">
                 <button>Learn</button>
@@ -85,8 +81,7 @@ const Category = () => {
             <div className="left">
               <h2>Vocabulary</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. amet
-                consectetur adipisicing eli{' '}
+              One forgets words as one forgets names. One's vocabulary needs constant fertilizing or it will die.
               </p>
               <Link to="/vocabulary">
                 <button>Learn</button>
@@ -102,8 +97,7 @@ const Category = () => {
             <div className="left">
               <h2>Reading For Pleasure</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. amet
-                consectetur adipisicing eli{' '}
+              A reader lives a thousand lives before he dies . . 
               </p>
               <Link to="/pleasure">
                 <button>Learn</button>

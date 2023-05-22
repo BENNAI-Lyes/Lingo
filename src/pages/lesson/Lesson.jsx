@@ -195,7 +195,7 @@ const Lesson = () => {
           {currentLesson.cat !== 'pleasure' && (
             <div className="test">
               <h2>test:</h2>
-              <p>if you have study the lesson feel free to test your self</p>
+              <p>Let's take the quiz</p>
               {/* *********** QUESTIONS ********** */}
               <div className="questionsContainer">
                 {currentLesson.questions?.map((ques, i) => {
