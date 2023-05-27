@@ -12,8 +12,7 @@ const Login = () => {
             .
           </h1>
           <p>
-            Take your english to the next level, with fun........ Lorem ipsum
-            dolor sit amet. just choose your level and start learning.
+            Take your english to the next level, with EasyFunEnglish.
           </p>
           <Link to="/levels">
             <button>choose your level</button>

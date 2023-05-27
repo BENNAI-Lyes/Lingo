@@ -195,7 +195,7 @@ const Lesson = () => {
           {currentLesson.cat !== 'pleasure' && (
             <div className="test">
               <h2>test:</h2>
-              <p>Let's take the quiz</p>
+              <p>Let's take the quiz.</p>
               {/* *********** QUESTIONS ********** */}
               <div className="questionsContainer">
                 {currentLesson.questions?.map((ques, i) => {
@@ -455,6 +455,7 @@ const Lesson = () => {
                   );
                 })}
               </div>
+
               {/* //writing */}
               {currentLesson.cat === 'writing' ||
                 (currentLesson.cat === 'reading' && (
@@ -489,6 +490,7 @@ const Lesson = () => {
                     </form>
                   </div>
                 ))}
+
               {/* result */}
               <div className="resultContainer">
                 <button
@@ -535,7 +537,7 @@ const Lesson = () => {
                       </h5>
                       <h6 className={score < 12 ? `fail` : `success`}>
                         {score < 12
-                          ? `Pleas study again this lesson.`
+                          ? `Please try again.`
                           : `You can pass to the next lesson.`}
                       </h6>
                     </div>
