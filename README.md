@@ -19,10 +19,10 @@ LingoLadder is a language learning management system (LLMS) built with React.js 
 
 ## Installation
 
-1. Clone the repository: git clone https://github.com/BENNAI-Lyes/LingoLadder.git
-2. Navigate to the project directory: cd LingoLadder
-3. Install the dependencies: npm install
-4. Start the development server: npm start
+1. Clone the repository: `git clone https://github.com/BENNAI-Lyes/LingoLadder.git`
+2. Navigate to the project directory: `cd LingoLadder`
+3. Install the dependencies: `npm install`
+4. Start the development server: `npm start`
 5. Open your browser and visit: `http://localhost:3000` to access LingoLadder.
 
 ## Usage
@@ -39,5 +39,9 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 
 ## License
 
-This project is licensed under the [MIT License].
+This project is licensed under the [MIT License](https://opensource.org/license/mit/).
+
+## Contact
+
+For any inquiries or questions, please contact [BENNAI Lyes](mailto:bennailyes19@gmail.com).
 
