@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Login from './pages/login/Login';
+import Home from './pages/home/Home';
 import Level from './pages/level/Level';
 import NotFound from './pages/notFound/NotFound';
 import UnderCons from './pages/underCons/UnderCons';
@@ -13,82 +13,82 @@ import Vocabulary from './pages/vocabulary/Vocabulary';
 import Pleasure from './pages/pleasure/Pleasure';
 
 const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <Login />,
-  },
-  {
-    path: '/levels',
-    element: <Level />,
-  },
-  {
-    path: '/underCons',
-    element: <UnderCons />,
-  },
-  {
-    path: '/category',
-    element: <Category />,
-  },
-  {
-    path: '/reading',
-    element: <Reading />,
-  },
-  {
-    path: '/reading/:id',
-    element: <Lesson />,
-  },
-  {
-    path: '/writing',
-    element: <Writing />,
-  },
-  {
-    path: '/writing/:id',
-    element: <Lesson />,
-  },
-  {
-    path: '/listening',
-    element: <Listening />,
-  },
-  {
-    path: '/listening/:id',
-    element: <Lesson />,
-  },
-  {
-    path: '/grammar',
-    element: <Speaking />,
-  },
-  {
-    path: '/grammar/:id',
-    element: <Lesson />,
-  },
-  {
-    path: '/vocabulary',
-    element: <Vocabulary />,
-  },
-  {
-    path: '/vocabulary/:id',
-    element: <Lesson />,
-  },
-  {
-    path: '/pleasure',
-    element: <Pleasure />,
-  },
-  {
-    path: '/pleasure/:id',
-    element: <Lesson />,
-  },
-  {
-    path: '*',
-    element: <NotFound />,
-  },
+	{
+		path: '/',
+		element: <Home />,
+	},
+	{
+		path: '/levels',
+		element: <Level />,
+	},
+	{
+		path: '/underCons',
+		element: <UnderCons />,
+	},
+	{
+		path: '/category',
+		element: <Category />,
+	},
+	{
+		path: '/reading',
+		element: <Reading />,
+	},
+	{
+		path: '/reading/:id',
+		element: <Lesson />,
+	},
+	{
+		path: '/writing',
+		element: <Writing />,
+	},
+	{
+		path: '/writing/:id',
+		element: <Lesson />,
+	},
+	{
+		path: '/listening',
+		element: <Listening />,
+	},
+	{
+		path: '/listening/:id',
+		element: <Lesson />,
+	},
+	{
+		path: '/grammar',
+		element: <Speaking />,
+	},
+	{
+		path: '/grammar/:id',
+		element: <Lesson />,
+	},
+	{
+		path: '/vocabulary',
+		element: <Vocabulary />,
+	},
+	{
+		path: '/vocabulary/:id',
+		element: <Lesson />,
+	},
+	{
+		path: '/pleasure',
+		element: <Pleasure />,
+	},
+	{
+		path: '/pleasure/:id',
+		element: <Lesson />,
+	},
+	{
+		path: '*',
+		element: <NotFound />,
+	},
 ]);
 
 function App() {
-  return (
-    <div className="app">
-      <RouterProvider router={router} />
-    </div>
-  );
+	return (
+		<div className="app">
+			<RouterProvider router={router} />
+		</div>
+	);
 }
 
 export default App;

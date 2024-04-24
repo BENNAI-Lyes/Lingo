@@ -1,0 +1,21 @@
+.navbar {
+	width: 100%;
+	padding: 20px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.get-stander {
+		background-color: var(--primary-color);
+		color: var(--wight-color);
+		padding: 5px 15px;
+		border-radius: 30px;
+		font-size: 17px;
+		font-weight: 500;
+		transition: all 0.3s ease;
+
+		&:hover {
+			background-color: var(--primary-color-dark);
+		}
+	}
+}
