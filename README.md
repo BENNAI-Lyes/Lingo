@@ -1,6 +1,6 @@
-# LingoLadder
+# Lingo
 
-LingoLadder is a language learning management system (LLMS) built with React.js and styled with Sass. The LLMS provides a comprehensive platform for language learners, offering lessons and assessments for reading, writing, grammar, listening, vocabulary, and reading for pleasure. It incorporates interactive features such as quizzes, automated scoring, and communication channels for learners to connect with their teachers.
+Lingo is a language learning management system (LLMS) built with React.js and styled with Sass. The LLMS provides a comprehensive platform for language learners, offering lessons and assessments for reading, writing, grammar, listening, vocabulary, and reading for pleasure. It incorporates interactive features such as quizzes, automated scoring, and communication channels for learners to connect with their teachers.
 
 ## Features
 
@@ -19,11 +19,11 @@ LingoLadder is a language learning management system (LLMS) built with React.js 
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/BENNAI-Lyes/LingoLadder.git`
-2. Navigate to the project directory: `cd LingoLadder`
+1. Clone the repository: `git clone https://github.com/BENNAI-Lyes/Lingo.git`
+2. Navigate to the project directory: `cd Lingo`
 3. Install the dependencies: `npm install`
 4. Start the development server: `npm start`
-5. Open your browser and visit: `http://localhost:3000` to access LingoLadder.
+5. Open your browser and visit: `http://localhost:3000` to access Lingo.
 
 ## Usage
 
@@ -35,7 +35,7 @@ LingoLadder is a language learning management system (LLMS) built with React.js 
 
 ## Contributing
 
-Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request. We appreciate your help in making LingLadder even better!
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request. We appreciate your help in making Ling even better!
 
 ## License
 
