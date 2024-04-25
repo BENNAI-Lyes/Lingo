@@ -11,6 +11,7 @@ import Listening from './pages/listening/Listening';
 import Speaking from './pages/speaking/Speaking';
 import Vocabulary from './pages/vocabulary/Vocabulary';
 import Pleasure from './pages/pleasure/Pleasure';
+import Contact from './pages/contact/Contact';
 
 const router = createBrowserRouter([
 	{
@@ -22,12 +23,12 @@ const router = createBrowserRouter([
 		element: <Level />,
 	},
 	{
-		path: '/underCons',
-		element: <UnderCons />,
+		path: '/levels/:id/categories',
+		element: <Category />,
 	},
 	{
-		path: '/category',
-		element: <Category />,
+		path: '/underCons',
+		element: <UnderCons />,
 	},
 	{
 		path: '/reading',
@@ -76,6 +77,10 @@ const router = createBrowserRouter([
 	{
 		path: '/pleasure/:id',
 		element: <Lesson />,
+	},
+	{
+		path: '/contact',
+		element: <Contact />,
 	},
 	{
 		path: '*',

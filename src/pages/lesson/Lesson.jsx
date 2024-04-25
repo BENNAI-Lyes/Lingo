@@ -8,6 +8,8 @@ import { vocabulary } from '../../assets/data/vocabulary';
 import { writing } from '../../assets/data/writing';
 
 import { useState } from 'react';
+import Navbar from '../../components/navbar/Navbar';
+import Footer from '../../components/footer/Footer';
 
 const Lesson = () => {
 	const navigate = useNavigate();
@@ -112,10 +114,13 @@ const Lesson = () => {
 		<div className="lesson">
 			<div className="container">
 				<div className="content">
+					<Navbar />
+
 					<h1>
 						{' '}
 						{category === 'pleasure' ? 'Reading For Pleasure' : category}:
 					</h1>
+
 					<h2> {currentLesson.title} </h2>
 
 					{/* HINT */}
@@ -160,6 +165,7 @@ const Lesson = () => {
 
 					<hr />
 
+					{/* TEST */}
 					{currentLesson.cat !== 'pleasure' && (
 						<div className="test">
 							<h2>test:</h2>
@@ -427,7 +433,7 @@ const Lesson = () => {
 										setOpenModal(true);
 										setClickedAnswer({});
 									}}>
-									Result
+									Check the result
 								</button>
 
 								{openModal && (
@@ -472,6 +478,7 @@ const Lesson = () => {
 							</div>
 						</div>
 					)}
+					<Footer />
 				</div>
 			</div>
 		</div>

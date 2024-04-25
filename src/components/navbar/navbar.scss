@@ -5,17 +5,24 @@
 	justify-content: space-between;
 	align-items: center;
 
-	.get-stander {
-		background-color: var(--primary-color);
-		color: var(--wight-color);
-		padding: 5px 15px;
-		border-radius: 30px;
-		font-size: 17px;
-		font-weight: 500;
-		transition: all 0.3s ease;
+	ul {
+		display: flex;
+		align-items: center;
+		gap: 15px;
 
-		&:hover {
-			background-color: var(--primary-color-dark);
+		li {
+			font-weight: 500;
+			transition: color 0.3s ease;
+
+			&.active {
+				color: var(--primary-color);
+			}
+
+			&:hover {
+				a {
+					color: var(--primary-color);
+				}
+			}
 		}
 	}
 }

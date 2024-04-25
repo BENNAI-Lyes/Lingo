@@ -1,6 +1,5 @@
 import './home.scss';
 
-import Contact from '../../components/contact/Contact';
 import Footer from '../../components/footer/Footer';
 import Hero from '../../components/hero/Hero';
 import AnyWhere from '../../components/anyWhere/AnyWhere';
@@ -17,7 +16,6 @@ const Home = () => {
 					<Hero />
 					<AnyWhere />
 					<Categories />
-					<Contact />
 					<Footer />
 				</Container>
 			</div>

@@ -6,27 +6,16 @@ import writing from '../../assets/img/writing.svg';
 import listening from '../../assets/img/listening.svg';
 import pleasure from '../../assets/img/pleasure.svg';
 import { Link } from 'react-router-dom';
+import Navbar from '../../components/navbar/Navbar';
+import Footer from '../../components/footer/Footer';
 
 const Category = () => {
 	return (
 		<div className="category">
 			<div className="container">
+				<Navbar />
+
 				<div className="cats">
-					{/* Reading For Pleasure */}
-					<div className="cat">
-						<div className="left">
-							<h2>Reading For Pleasure</h2>
-							<p>A reader lives a thousand lives before he dies . .</p>
-							<Link to="/pleasure">
-								<button>Learn</button>
-							</Link>
-						</div>
-
-						<div className="right">
-							<img src={pleasure} alt="" />
-						</div>
-					</div>
-
 					{/* Reading */}
 					<div className="cat">
 						<div className="left">
@@ -106,7 +95,24 @@ const Category = () => {
 							<img src={vocabulary} alt="" />
 						</div>
 					</div>
+
+					{/* Reading For Pleasure */}
+					<div className="cat">
+						<div className="left">
+							<h2>Reading For Pleasure</h2>
+							<p>A reader lives a thousand lives before he dies . .</p>
+							<Link to="/pleasure">
+								<button>Learn</button>
+							</Link>
+						</div>
+
+						<div className="right">
+							<img src={pleasure} alt="" />
+						</div>
+					</div>
 				</div>
+
+				<Footer />
 			</div>
 		</div>
 	);

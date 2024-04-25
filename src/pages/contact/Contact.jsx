@@ -4,7 +4,9 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import './contact.scss';
-import Button from '../button/Button';
+import Button from '../../components/button/Button';
+import Navbar from '../../components/navbar/Navbar';
+import Footer from '../../components/footer/Footer';
 
 const Contact = () => {
 	const form = useRef();
@@ -42,9 +44,11 @@ const Contact = () => {
 	};
 
 	return (
-		<>
+		<div className="contact">
 			<ToastContainer />
-			<div className="email">
+			<div className="container">
+				<Navbar />
+
 				<form ref={form} onSubmit={sendEmail}>
 					<h2>Ask a question</h2>
 					<div className="line" />
@@ -72,8 +76,12 @@ const Contact = () => {
 						onChange={(e) => setMessage(e.target.value)}></textarea>
 					<Button text="Send" />
 				</form>
+
+				<div style={{ marginTop: '30px' }}>
+					<Footer />
+				</div>
 			</div>
-		</>
+		</div>
 	);
 };
 
