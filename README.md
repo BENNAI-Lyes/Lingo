@@ -1,20 +1,6 @@
 # Lingo
 
-Lingo stands as an innovative Language Learning Management System (LLMS), meticulously designed to cater to the unique needs of Algerian middle school students. Its core mission revolves around fostering proficiency in the four fundamental language skills: reading, writing, listening, and grammar. Through a dynamic and interactive interface, Lingo delivers engaging lessons enriched with diverse media content, ensuring an immersive learning experience.
-
-Each lesson within Lingo is thoughtfully structured to encompass a spectrum of learning activities and assessments. From interactive exercises to comprehensive quizzes, learners encounter various question formats such as true/false, multiple-choice, reordering, matching, and filling the gaps. This multifaceted approach not only enhances comprehension but also reinforces retention.
-
-Furthermore, Lingo employs automated scoring mechanisms to provide instantaneous feedback on learners' performance, allowing for continuous improvement and personalized learning journeys. In essence, Lingo emerges as a sophisticated educational tool, seamlessly blending technology and pedagogy to empower students in their language acquisition endeavors.
-
-## Features
-
-- Four educational levels catering to learners at different proficiency levels.
-- Lessons covering essential language skills: reading, writing, grammar, listening, vocabulary, and reading for pleasure.
-- Engaging and interactive lessons with multimedia content (text,audio, video).
-- Clear explanations and demonstrations provided for each lesson.
-- Various question types in quizzes, including true/false, multiple-choice, matching, re-ordering, and filling the gaps.
-- Automated scoring and immediate feedback for quizzes.
-- Contact channel to facilitate communication between learners and teachers.
+Language Learning Management System tailored for Algerian middle school  students to improve their English skills. The platform offers a variety  of lessons covering reading, writing, listening, and grammar in multiple  formats (text, audio, video). Each lesson concludes with a  comprehensive quiz featuring true/false, multiple-choice, reordering,  matching, and fill-in-the-gap questions. The system evaluates student  performance, providing scores and constructive feedback. Additionally,  the app includes a form for students to ask questions.
 
 ## Technologies Used
 
