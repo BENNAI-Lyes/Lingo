@@ -1,0 +1,16 @@
+.categories {
+	width: 100vw;
+
+	.container {
+		max-width: 1200px;
+		margin: auto;
+
+		.cats {
+			margin: 40px 0;
+			display: flex;
+			flex-direction: column;
+			gap: 50px;
+			padding: 0 15px;
+		}
+	}
+}

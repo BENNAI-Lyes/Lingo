@@ -1,4 +1,6 @@
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+import { useState } from 'react';
+
 import './lesson.scss';
 import { grammar } from '../../assets/data/grammar';
 import { listening } from '../../assets/data/listening';
@@ -7,12 +9,12 @@ import { reading } from '../../assets/data/reading';
 import { vocabulary } from '../../assets/data/vocabulary';
 import { writing } from '../../assets/data/writing';
 
-import { useState } from 'react';
 import Navbar from '../../components/navbar/Navbar';
 import Footer from '../../components/footer/Footer';
 
 const Lesson = () => {
-	const navigate = useNavigate();
+	const id = parseInt(useParams().lessonId);
+	const category = useParams().categoryName;
 
 	const [openModal, setOpenModal] = useState(false);
 	const [score, setScore] = useState(0);
@@ -23,28 +25,23 @@ const Lesson = () => {
 
 	const [clickedAnswer, setClickedAnswer] = useState({});
 
-	const id = parseInt(useLocation().pathname.split('/')[2]);
-	const category = useLocation().pathname.split('/')[1];
-
 	let currentLesson;
 	if (category === 'grammar') {
-		currentLesson = grammar.filter((lesson) => lesson.id === id)[0];
+		currentLesson = grammar.find((lesson) => lesson.id === id);
 	} else if (category === 'listening') {
-		currentLesson = listening.filter((lesson) => lesson.id === id)[0];
+		currentLesson = listening.find((lesson) => lesson.id === id);
 	} else if (category === 'reading') {
-		currentLesson = reading.filter((lesson) => lesson.id === id)[0];
+		currentLesson = reading.find((lesson) => lesson.id === id);
 	} else if (category === 'vocabulary') {
-		currentLesson = vocabulary.filter((lesson) => lesson.id === id)[0];
+		currentLesson = vocabulary.find((lesson) => lesson.id === id);
 	} else if (category === 'writing') {
-		currentLesson = writing.filter((lesson) => lesson.id === id)[0];
+		currentLesson = writing.find((lesson) => lesson.id === id);
 	} else if (category === 'pleasure') {
-		currentLesson = pleasure.filter((lesson) => lesson.id === id)[0];
+		currentLesson = pleasure.find((lesson) => lesson.id === id);
 	}
 
 	const handelSubmit = (e) => {
 		e.preventDefault();
-
-		console.log('anserw submited');
 	};
 
 	const handelScore = (
@@ -138,8 +135,7 @@ const Lesson = () => {
 							<iframe
 								title="watch and listen to learn"
 								frameborder="0"
-								src={currentLesson.videoUrl}
-								allowfullscreen></iframe>
+								src={currentLesson.videoUrl}></iframe>
 						</div>
 					)}
 
@@ -399,7 +395,7 @@ const Lesson = () => {
 															<input
 																type="text"
 																className="fillingGapsAns"
-																placeholder="Enter the gaps with the same order here like: ghfhg,ghgh ...."
+																placeholder="Enter the gaps with the same order here like: a,b, ...."
 																value={fillingGapsAns}
 																onChange={(e) =>
 																	setFillingGapsAns(e.target.value)
@@ -447,7 +443,6 @@ const Lesson = () => {
 													setFillingGapsAns('');
 													setMatchingAns('');
 													setReOrderingAns('');
-													navigate(`/${currentLesson.cat}/${id}`);
 												}}>
 												X
 											</div>

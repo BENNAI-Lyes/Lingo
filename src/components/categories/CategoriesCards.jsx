@@ -2,11 +2,11 @@ import { FcReading, FcReadingEbook } from 'react-icons/fc';
 import { TbTextGrammar, TbVocabulary, TbWriting } from 'react-icons/tb';
 import { GrAssistListening } from 'react-icons/gr';
 
-import './categories.scss';
+import './categoriesCards.scss';
 
-const Categories = () => {
+const CategoriesCards = () => {
 	return (
-		<div className="categories">
+		<div className="categoriesCards">
 			<h2>Course categories</h2>
 			<div className="line" />
 			<p>
@@ -81,4 +81,4 @@ const Categories = () => {
 	);
 };
 
-export default Categories;
+export default CategoriesCards;

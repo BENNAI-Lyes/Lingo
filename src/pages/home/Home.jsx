@@ -3,7 +3,7 @@ import './home.scss';
 import Footer from '../../components/footer/Footer';
 import Hero from '../../components/hero/Hero';
 import AnyWhere from '../../components/anyWhere/AnyWhere';
-import Categories from '../../components/categories/Categories';
+import CategoriesCards from '../../components/categories/CategoriesCards';
 import Navbar from '../../components/navbar/Navbar';
 import Container from '../../components/container/Container';
 
@@ -15,7 +15,7 @@ const Home = () => {
 					<Navbar />
 					<Hero />
 					<AnyWhere />
-					<Categories />
+					<CategoriesCards />
 					<Footer />
 				</Container>
 			</div>

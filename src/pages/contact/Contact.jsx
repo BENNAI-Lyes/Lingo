@@ -28,7 +28,7 @@ const Contact = () => {
 				)
 				.then(
 					(result) => {
-						toast.success('Message has been sent.');
+						toast.success('Question has been sent.');
 
 						setName('');
 						setEmail('');

@@ -1,16 +1,12 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
 import Home from './pages/home/Home';
 import Level from './pages/level/Level';
 import NotFound from './pages/notFound/NotFound';
 import UnderCons from './pages/underCons/UnderCons';
-import Category from './pages/categorys/Category';
-import Reading from './pages/reading/Reading';
+import Categories from './pages/categories/Categories';
+import Category from './pages/category/Category';
 import Lesson from './pages/lesson/Lesson';
-import Writing from './pages/writing/Writing';
-import Listening from './pages/listening/Listening';
-import Speaking from './pages/speaking/Speaking';
-import Vocabulary from './pages/vocabulary/Vocabulary';
-import Pleasure from './pages/pleasure/Pleasure';
 import Contact from './pages/contact/Contact';
 
 const router = createBrowserRouter([
@@ -24,58 +20,18 @@ const router = createBrowserRouter([
 	},
 	{
 		path: '/levels/:id/categories',
-		element: <Category />,
+		element: <Categories />,
 	},
 	{
 		path: '/underCons',
 		element: <UnderCons />,
 	},
 	{
-		path: '/reading',
-		element: <Reading />,
+		path: '/levels/:id/categories/:categoryName',
+		element: <Category />,
 	},
 	{
-		path: '/reading/:id',
-		element: <Lesson />,
-	},
-	{
-		path: '/writing',
-		element: <Writing />,
-	},
-	{
-		path: '/writing/:id',
-		element: <Lesson />,
-	},
-	{
-		path: '/listening',
-		element: <Listening />,
-	},
-	{
-		path: '/listening/:id',
-		element: <Lesson />,
-	},
-	{
-		path: '/grammar',
-		element: <Speaking />,
-	},
-	{
-		path: '/grammar/:id',
-		element: <Lesson />,
-	},
-	{
-		path: '/vocabulary',
-		element: <Vocabulary />,
-	},
-	{
-		path: '/vocabulary/:id',
-		element: <Lesson />,
-	},
-	{
-		path: '/pleasure',
-		element: <Pleasure />,
-	},
-	{
-		path: '/pleasure/:id',
+		path: '/levels/:id/categories/:categoryName/:lessonId',
 		element: <Lesson />,
 	},
 	{

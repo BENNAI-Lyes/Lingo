@@ -34,7 +34,7 @@
 			.info {
 				display: flex;
 				align-items: center;
-				gap: 25px;
+				gap: 30px;
 				width: 100%;
 
 				@media screen and (max-width: '600px') {
@@ -57,7 +57,7 @@
 			}
 
 			textarea {
-				height: 50px;
+				height: 100px;
 				padding: 15px;
 				border: none;
 				outline: none;
